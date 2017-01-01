@@ -1,0 +1,122 @@
+::selection {
+	color: #000;
+	background: rgba(31,92,62,0.4); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	color: #000;
+	background: rgba(31,92,62,0.4); /* Gecko Browsers */
+}
+
+.spinner {
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0;
+	padding: 20px;
+}
+
+.layout {
+	opacity: 0;
+}
+
+.widthFull {
+	width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+.btn-transparent {
+	background-color: transparent;
+}
+.btn-white {
+	background-color: #fff;
+	color: #373a3c;
+}
+
+.table {
+	display: table;
+	margin: 0;
+}
+.tableRow {
+	display: table-row;
+}
+.tableCell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.header {
+	padding: 12px 0 15px;
+	font-size: .87em;
+	line-height: 1.24em;
+}
+.header .nav {
+	display: flex;
+	justify-content: center;
+}
+.header .nav > li a {
+	display: block;
+	padding: 0 5px;
+	font-weight: 700;
+	color: #000;
+}
+.header .nav > li a span {
+	display: inline-block;
+}
+.header .nav > li:hover a,
+.header .nav > li.selected a {
+	color: #0275d8;
+}
+.header .nav > li.selected a span {
+	box-shadow: inset 0 -1px 0 0 #0275d8;
+}
+.header .user.table {
+	width: auto;
+	float: right;
+}
+.header .user .title {
+	font-weight: 600;
+}
+
+
+
+.topBar {
+	background-color: #0096ff;
+	color: #fff;
+	padding: 6px 0;
+}
+.topBar a {
+	color: #fff;
+}
+.topBar .form-control {
+	border-color: #fff;
+}
+.topBar .nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2px 0;
+	background-color: transparent;
+	border-color: transparent;
+}
+.topBar .nav > li > a {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 5px;
+	font-weight: 700;
+	transform: scale(.8,.8)
+}
+.topBar .nav > li:hover a,
+.topBar .nav > li.selected a {
+	background-color: rgba(0,0,0,0.1);
+}

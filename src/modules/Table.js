@@ -6,9 +6,19 @@ var Table = (function() {
     		this.createTable(data)
     	},
         createTable(data) {
-        	var wraper = $('<ul></ul>')
-        	data.map( row => wraper.append('<li><span>' +row.id+ '</span> <span>' +row.name+ '</span></li>') )
-            return $('body').append(wraper)
+        	var table = $('<table class="table table-bordered table-striped"></table>')
+        	var thead = $('<thead><tr><th>id</th><th>name</th><th>age</th><th>gender</th></tr></thead>')
+        	table.append(thead)
+        	var tbody = $('<tbody></tbody>')
+        	table.append(tbody)
+
+        	data.map( row => tbody.append('<tr>'+
+        		'<td>' +row.id+ '</td>'+
+        		'<td>' +row.name+ '</td>'+
+        		'<td>' +row.age+ '</td>'+
+        		'<td>' +row.gender+ '</td>'+
+        		'</tr>') )
+            return $('#root').append(table)
         }
     }
 }())

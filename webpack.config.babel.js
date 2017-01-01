@@ -2,7 +2,7 @@ import extractTextPlugin from 'extract-text-webpack-plugin';
 
 module.exports = {
   cache: false,
-  entry: './src/index',
+  entry: './src/',
   output: {
     filename: 'dist/bundle.js',
   },
@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loaders: ["style", "css", "sass-loader"]
       },
       {
         test: /\.css$/,
