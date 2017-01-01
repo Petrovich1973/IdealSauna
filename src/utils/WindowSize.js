@@ -1,20 +1,20 @@
 import $ from 'jquery'
 
 var WindowSize = (function() {
-    var width = $(window).width()
-    var height = $(window).height()
     return {
     	init(data) {
     		this.upadareWidthWindow()
     	},
         width() {
+            var width = $(window).width()
             return width
         },
         height() {
+            var height = $(window).height()
             return height
         },
         upadareWidthWindow() {
-            console.log(width, height)
+            console.log(this.width(), this.height())
         }
     }
 }())

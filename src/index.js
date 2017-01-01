@@ -41,7 +41,7 @@ $(document).ready(function(){
 	})
 	//DocumentHeader.init()
 	//fetchData()
-	WindowSize.init()	
+	WindowSize.init()
 	setTimeout(function(){
 		slideHideAnimate()
 	}, 1000)
