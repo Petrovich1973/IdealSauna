@@ -145,3 +145,8 @@
 .topBar .nav > li > span {
 	transform: scale(.8,.8)
 }
+
+
+.mainBox {
+	padding: 15px 0;
+}
