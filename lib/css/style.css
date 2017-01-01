@@ -65,7 +65,7 @@
 }
 .header .nav > li a {
 	display: block;
-	padding: 0 5px;
+	padding: 5px;
 	font-weight: 700;
 	color: #000;
 }
@@ -78,6 +78,9 @@
 }
 .header .nav > li.selected a span {
 	box-shadow: inset 0 -1px 0 0 #0275d8;
+}
+.header .phone {
+	padding-right: 15px;
 }
 .header .user.table {
 	width: auto;
@@ -92,7 +95,6 @@
 .topBar {
 	background-color: #0096ff;
 	color: #fff;
-	padding: 6px 0;
 }
 .topBar a {
 	color: #fff;
@@ -103,20 +105,43 @@
 .topBar .nav {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	padding: 2px 0;
+	align-items: stretch;
 	background-color: transparent;
-	border-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.topBar .nav > li {
+	padding: 0;
+	margin: 0;
 }
 .topBar .nav > li > a {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 0 5px;
-	font-weight: 700;
+	padding: 8px 10px;
+	font-weight: 600;
+}
+.topBar .nav > li > a span {
 	transform: scale(.8,.8)
 }
 .topBar .nav > li:hover a,
 .topBar .nav > li.selected a {
 	background-color: rgba(0,0,0,0.1);
+}
+.topBar .search {
+	padding: 5px 0;
+}
+.topBar .shopping_basket {
+	justify-content: flex-end;
+}
+.topBar .shopping_basket > li {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 8px 10px;
+	font-weight: 400;
+}
+.topBar .nav > li > span {
+	transform: scale(.8,.8)
 }
