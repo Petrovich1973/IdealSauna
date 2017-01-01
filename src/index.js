@@ -21,11 +21,18 @@ var slideHideAnimate = function() {
 		opacity: 0,
 		height: 0,
 		padding: 0
-	}, 1000)
+	}, 1000, function() {
+		$('.header .phone img').addClass('vibro')
+	})
 	//.slideUp(1000)
 }
 
+var scrollTop = function() {
+	window.scrollTo(0, 0)
+}
+
 $(document).ready(function(){
+	scrollTop()
 	$('.spinner').css({
 		height: WindowSize.height()
 	})
