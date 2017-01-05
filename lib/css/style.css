@@ -126,9 +126,9 @@ body {
 	padding: 8px 10px;
 	font-weight: 600;
 }
-.topBar .nav > li:first-child > a {
+/*.topBar .nav > li:first-child > a {
 	padding-left: 0;
-}
+}*/
 .topBar .nav > li > a span {
 	transform: scale(.8,.8)
 }
@@ -146,7 +146,7 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 8px 0;
+	padding: 8px 10px;
 	font-weight: 400;
 }
 .topBar .nav > li > span {
