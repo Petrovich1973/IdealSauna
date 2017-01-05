@@ -28,25 +28,32 @@ var slideHideAnimate = function() {
 }
 
 var scrollTop = function() {
-	window.scrollTo(0, 0)
+	window.scrollTo( 0, 0 )
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
+
 	scrollTop()
+
 	$('.spinner').css({
 		height: WindowSize.height()
 	})
+
 	$('.layout').css({
 		opacity: 1
 	})
 	//DocumentHeader.init()
 	//fetchData()
 	WindowSize.init()
-	setTimeout(function(){
+
+	setTimeout(function() {
 		slideHideAnimate()
 	}, 1000)
+
 })
 
-$(window).resize(function(){
+$(window).resize(function() {
+
 	WindowSize.init()
+
 })

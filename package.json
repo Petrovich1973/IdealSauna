@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --progress --colors --watch --host 0.0.0.0 --port 7777",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.babel.js"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",

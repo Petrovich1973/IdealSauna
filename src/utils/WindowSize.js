@@ -14,7 +14,7 @@ var WindowSize = (function() {
             return height
         },
         upadareWidthWindow() {
-            console.log(this.width(), this.height())
+            console.log( this.width(), this.height() )
         }
     }
 }())
