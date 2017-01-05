@@ -1,5 +1,5 @@
 body {
-	min-width: 333px;
+	min-width: 320px;
 }
 
 ::selection {
@@ -125,6 +125,9 @@ body {
 	align-items: center;
 	padding: 8px 10px;
 	font-weight: 600;
+}
+.topBar .nav > li:first-child > a {
+	padding-left: 0;
 }
 .topBar .nav > li > a span {
 	transform: scale(.8,.8)

@@ -1,4 +1,5 @@
-import $ from 'jquery'
+//import $ from 'jquery'
+//import './utils/bootstrap.min.js'
 
 
 import DocumentHeader from './modules/DocumentHeader'
