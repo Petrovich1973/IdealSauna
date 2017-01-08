@@ -1,21 +1,21 @@
-import $ from 'jquery'
+import $ from "jquery"
 
-var DocumentHeader = (function() {
+let DocumentHeader = (function () {
 
-    var obj = {
+    let obj = {
         id: 'DocumentHeader',
         className: 'DocumentHeader',
         wrap: $('<div></div>'),
         container: $('<div class="container"></div>')
     }
-    var navbar = $('<nav class="navbar navbar-default" role="navigation"></nav>')
-    var logo = $('<img src="lib/img/logo.png" class="logo" />')
-    var phonesGroup = $('<div class="phonesGroup"><div class="phone">1111</div><div class="phone">2222</div></div>')
+    let navbar = $('<nav class="navbar navbar-default" role="navigation"></nav>')
+    let logo = $('<img src="lib/img/logo.png" class="logo" />')
+    let phonesGroup = $('<div class="phonesGroup"><div class="phone">1111</div><div class="phone">2222</div></div>')
 
     return {
-    	init() {
-    		this.createDocumentHeader(obj)
-    	},
+        init() {
+            this.createDocumentHeader(obj)
+        },
         createDocumentHeader(data) {
 
             data.wrap.attr('id', data.id)
