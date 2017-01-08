@@ -47,7 +47,9 @@ $(document).ready(function() {
 
 	setTimeout(function() {
 		slideHideAnimate()
-	}, 1000)
+	}, 700)
+
+	console.debug('document.ready')
 
 })
 
