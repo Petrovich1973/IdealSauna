@@ -12,7 +12,7 @@ let fetchData = function() {
 	  $('.spinner').hide();
 	  console.log(data)
 	})
-};
+}
 
 let slideHideAnimate = function() {
 	$('.spinner')
@@ -22,37 +22,37 @@ let slideHideAnimate = function() {
 		padding: 0
 	}, 1000, function() {
 		$('.header .phone img').addClass('vibro')
-	});
+	})
 	//.slideUp(1000)
-};
+}
 
 let scrollTop = function() {
 	window.scrollTo( 0, 0 )
-};
+}
 
 $(document).ready(function() {
 
-	scrollTop();
+	scrollTop()
 
 	$('.spinner').css({
 		height: WindowSize.height()
-	});
+	})
 
 	$('.layout').css({
 		opacity: 1
-	});
+	})
 	//DocumentHeader.init()
 	//fetchData()
-	WindowSize.init();
+	WindowSize.init()
 
 	setTimeout(function() {
 		slideHideAnimate()
 	}, 1000)
 
-});
+})
 
 $(window).resize(function() {
 
 	WindowSize.init()
 
-});
+})
