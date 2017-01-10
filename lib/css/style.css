@@ -146,6 +146,9 @@ body {
 	padding: 8px 10px;
 	font-weight: 600;
 }
+.topBar .nav a:hover {
+	text-decoration: none;
+}
 /*.topBar .nav > li:first-child > a {
 	padding-left: 0;
 }*/
@@ -156,6 +159,7 @@ body {
 .topBar .nav > li.selected > a {
 	background-color: rgba(0,0,0,0.1);
 }
+
 .topBar .nav > li > ul.level_2 {
 	display: none;
 	position: absolute;
@@ -174,12 +178,44 @@ body {
 .topBar .nav > li:hover > .level_2 {
 	display: block;
 }
+.topBar .nav > li > ul.level_2 > li {
+	position: relative;
+}
 .topBar .nav > li > ul.level_2 > li > a {
 	display: block;
 	padding: 4px 15px;
 	color: #000;
 }
-.topBar .nav > li > ul.level_2 > li > a:hover {
+.topBar .nav > li > ul.level_2 > li:hover > a {
+	background-color: rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+.topBar .nav > li > ul.level_2 > li > ul.level_3 {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	background-color: #fff;
+	padding: 15px 0;
+	margin: 0;
+	margin-top: -15px;
+	list-style: none;
+	color: #000;
+	text-align: left;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)    ;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5)    ;
+}
+.topBar .nav > li > ul.level_2 > li:hover > .level_3 {
+	display: block;
+}
+.topBar .nav > li > ul.level_2 > li > ul.level_3 > li > a {
+	display: block;
+	padding: 4px 15px;
+	color: #000;
+}
+.topBar .nav > li > ul.level_2 > li > ul.level_3 > li:hover > a {
 	background-color: rgba(0,0,0,0.1);
 	text-decoration: none;
 }
@@ -189,6 +225,7 @@ body {
 }
 .topBar .shopping_basket {
 	justify-content: flex-end;
+	cursor: pointer;
 }
 .topBar .shopping_basket > li {
 	display: flex;
@@ -208,6 +245,13 @@ body {
 	position: relative;
 	right: 10px;
 }
+.topBar .shopping_basket:hover > li {
+	background-color: rgba(0,0,0,0.1);
+}
+.topBar .shopping_basket:hover > li:before {
+	opacity: 0;
+}
+
 .topBar .nav > li > span {
 	transform: scale(.8,.8)
 }
@@ -237,4 +281,28 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+
+
+
+
+
+
+
+
+
+/*@media (max-width: 575px) {*/
+@media all and (max-width: 575px) {
+	body .topBar .nav > li > ul.level_2 > li > .level_3 {
+		display: block;
+		position: static;
+		margin-left: 15px;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		background-color: transparent;
+	}
+	body .topBar .nav > li > ul.level_2 > li > ul.level_3 > li > a {
+		color: #717171;
+	}
 }

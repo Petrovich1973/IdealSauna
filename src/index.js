@@ -49,6 +49,10 @@ $(document).ready(function() {
 		slideHideAnimate()
 	}, 700)
 
+	$('.topBar .nav > li > a').click(function () {
+		return false
+    })
+
 	console.debug('document.ready')
 
 })
