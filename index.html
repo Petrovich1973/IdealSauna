@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>IdealSauna</title>
 
-    <!-- <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="lib/fonts/fonts.css">
 	<link rel="stylesheet" href="lib/css/style.css">
 	<link rel="stylesheet" href="lib/css/font-awesome.min.css">
@@ -23,23 +23,21 @@
             <div class="container">
                 <div class="table widthFull">
                     <div class="tableCell text-center">
-                        <img src="lib/img/logo.png" alt="" />
+                        <img src="lib/img/logo.png" class="logo" alt="" />
                     </div>
-                    <div class="tableCell phone hidden-xs-down">
-                        <div class="user table">
+                    <div class="tableCell phone paddingLeft hidden-xs-down">
+                        <div class="table">
                             <div class="tableCell">
                                 <img src="lib/img/icon-phone.png" alt="">
                             </div>
                             <div class="tableCell text-nowrap">
-                                <strong class="">+7 (495) 215-05-46</strong>
-                                <br/>
+                                <strong class="number">+7 (495) 215-05-46</strong>
                                 <a href="">Позвоните мне</a>
                             </div>                        
                         </div> 
                     </div>
                     <div class="tableCell phone text-nowrap hidden-lg-down">
-                        <strong>+7 (905) 528-72-02</strong>
-                        <br/>
+                        <strong class="number">+7 (905) 528-72-02</strong>
                         <span>Строительный отдел</span> 
                     </div>
                     <div class="tableCell hidden-md-down">
@@ -61,7 +59,7 @@
                     <div class="tableCell user hidden-xs-down">
                         <div class="user table">
                             <div class="tableCell">
-                                <img src="lib/img/icon-user-default.png" alt="">
+                                <img src="lib/img/icon-user-default.png" class="avatar" alt="">
                             </div>
                             <div class="tableCell text-nowrap hidden-sm-down">
                                 <div><span class="title">Личный кабинет</span></div>
@@ -92,11 +90,11 @@
                                         <img src="lib/img/icon-menu.png" alt="">
                                         <span class="hidden-xs-down">Каталог</span>
                                     </a>
-                                    <ul class="level_2">
+                                    <ul class="level_2 triangle-border top">
                                         <li><a href="">Печи для саун и бань</a></li>
                                         <li><a href="">Облицовки для печей</a></li>
                                         <li><a href="">Парогенераторы для хамама</a>
-                                            <ul class="level_3">
+                                            <ul class="level_3 triangle-border left">
                                                 <li><a href="">Печи для саун и бань</a></li>
                                                 <li><a href="">Облицовки для печей</a></li>
                                                 <li><a href="">Парогенераторы для хамама</a></li>
@@ -133,6 +131,14 @@
         </div>
         <div class="mainBox">
             <div class="container">
+                <p>Lorem</p>
+                <ul>
+                    <li>Lorem ipsum dolor <a href="#" tabindex="0" class="btn btn-warning popover-dismissible" role="button" data-toggle="popover" data-trigger="focus" title="Заголовок панели" data-content="Текст панели.">Ссылка с popover</a> sit amet, consectetur adipisicing elit. Eum hic, cumque aliquam doloremque, dolorum consectetur dignissimos? Neque reiciendis ipsam expedita, quis magni blanditiis ea, quibusdam aliquid corrupti laudantium id deleniti.</li>
+                    <li>Vel, nisi nihil, autem soluta voluptatum repudiandae doloribus tempore animi illum quas rerum ipsa. Sunt quaerat impedit, totam accusantium. Libero error sed nobis nisi, similique ut eaque asperiores mollitia placeat!</li>
+                    <li>Eum, nam. Repellendus sequi suscipit excepturi placeat cumque a officia enim assumenda rerum fugiat, vitae blanditiis quae obcaecati reiciendis ipsa recusandae perspiciatis, quo. Odit minima voluptas dolor officiis aspernatur magni.</li>
+                    <li>Quibusdam, unde. Doloribus maiores, ut reiciendis impedit provident porro voluptas sint, voluptatibus accusantium quidem quae assumenda ullam sequi voluptates deleniti dolorem ipsa iste, accusamus nisi veritatis ipsum? Eaque, autem, quos?</li>
+                    <li>Porro numquam vel iusto excepturi, nam delectus tempore est iste at ipsam atque ratione cum distinctio labore obcaecati provident eaque! Dignissimos eveniet vero numquam, repellendus architecto tenetur voluptatem ab aliquid!</li>
+                </ul>
                 <p>Lorem ipsum dolor sit amet, constryrtectetur adipi sicing elit. Ipsum, libero, ut error quia culpa hic arcytrytryrth itecto, corrupti esse totam quos perfe rendis maityrtores, earum itaque sit ad harum eius consequatur recusandae?</p>
                 <p>Loreytryrtym ipsum dolor sit amet, consectetur adipis icing elit. Ipsum, libero, ut er ror quia culpa hic arc hitecto, corrupti esse totam quos perferendis maiores, earum itaque sit ad harum eius consequatur recusandae?</p>
                 <p>Lorem ipsum dolor sit amet, consec tetur ad ip isicing elit. Ipsum, libero, ut error quia culpa hic archi tecto, corrupti esse totam quos perferendis maiores, earum itaque sit ad harum eius consequatur recusandae?</p>
@@ -181,8 +187,10 @@
 
 	<div class="root" id="root"></div>
 
-    <script src="lib/jquery/jquery-3.1.1.min.js"></script>
-    <script src="lib/bootstrap3/js/bootstrap.min.js"></script>
+    <!-- <script src="lib/jquery/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="lib/bootstrap3/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="dist/bundle.js"></script>
 
 </body>

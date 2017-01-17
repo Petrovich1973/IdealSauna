@@ -1,4 +1,4 @@
-import $ from 'jquery'
+//import $ from 'jquery'
 
 import DocumentHeader from './modules/DocumentHeader'
 import Table from './modules/Table'
@@ -52,6 +52,8 @@ $(document).ready(function() {
 	$('.topBar .nav > li > a').click(function () {
 		return false
     })
+
+    $('[data-toggle="popover"]').popover()
 
 	console.debug('document.ready')
 
