@@ -1,5 +1,4 @@
 body {
-	min-width: 320px;
 	font-family: 'Exo 2 Condensed';
 	font-size: 16px;
 }
@@ -153,7 +152,6 @@ a:focus, a:hover {
 .topBar {
 	background-color: #0096ff;
 	color: #fff;
-	height: 44px;
 }
 .topBar a {
 	color: #fff;
