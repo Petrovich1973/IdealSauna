@@ -1,18 +1,11 @@
 //import $ from 'jquery'
 
-import DocumentHeader from './modules/DocumentHeader'
-import Table from './modules/Table'
+//import DocumentHeader from './modules/DocumentHeader'
+//import Table from './modules/Table'
 
 import WindowSize from './utils/WindowSize'
 
-let fetchData = function() {
-	$('.spinner').show();
-	$.getJSON('https://www.mockaroo.com/db665250/download?count=300&key=d0878e70', function(data) {
-	  Table.init(data);
-	  $('.spinner').hide();
-	  console.log(data)
-	})
-}
+
 
 let slideHideAnimate = function() {
 	$('.spinner')
@@ -21,14 +14,27 @@ let slideHideAnimate = function() {
 		height: 0,
 		padding: 0
 	}, 1000, function() {
-		$('.header .phone img').addClass('vibro')
+		$('.phone img').addClass('vibro')
 	})
 	//.slideUp(1000)
 }
 
 let scrollTop = function() {
-	window.scrollTo( 0, 0 )
+	$(document).scrollTop(0)
 }
+
+var num = 88;
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+	  	$('.topBar').addClass('navbar-fixed-top')
+	  	$('.mainBox').css('margin-top', '44px') 
+    } else {
+		$('.topBar').removeClass('navbar-fixed-top')
+		$('.mainBox').css('margin-top', '0px') 
+    }
+})
+
 
 $(document).ready(function() {
 
