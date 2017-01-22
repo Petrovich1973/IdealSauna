@@ -20,7 +20,7 @@
 	<h1 class="spinner">Загрузка...</h1>
     <div class="infoTemp" style="position: fixed;bottom: 0;right: 0"></div>
 
-    <div class="layout">
+    <div class="layout" name="top">
     
         <div class="header">
             <div class="container">
@@ -77,7 +77,7 @@
         <div class="topBar">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-4">
+                    <div class="col-md-4">
                         <div class="input-group search">
                             <input type="text" class="form-control" placeholder="Найти в каталоге">
                             <span class="input-group-btn">
@@ -142,7 +142,7 @@
                             <li><a href=""><span>Облицовки для печей</span></a></li>
                             <li><a href=""><span>Парогенераторы для хамама</span></a></li>
                             <li><a href=""><span>Плитка для сауны и бани</span></a></li>
-                            <li><a href=""><span>Гималайская соль</span></a></li>
+                            <li class="active"><a href=""><span>Гималайская соль</span></a></li>
                             <li><a href=""><span>Дымоходы</span></a></li>
                             <li><a href=""><span>Двери</span></a></li>
                             <li><a href=""><span>Стеклянные перегородки для саун</span></a></li>
@@ -165,12 +165,17 @@
                         </ul>
                         <div class="banner"></div>
                         <div class="banner"></div>
+
+                        <a href="#top" class="smooth-scroll">
+                            <span class="icon">
+                                <i class="fa fa-angle-up"></i>
+                            </span>                            
+                            <span>Наверх</span>
+                        </a>
+
                     </div>
+
                     <div class="col-xs-9">
-
-
-
-
 
                         <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
                           <!-- Indicators -->
@@ -212,7 +217,10 @@
                             <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
                         </div>
 
-                        <h2>Хиты продаж</h2>
+                        <h2 class="name">
+                            <span>Хиты продаж</span>
+                            <a href="" class="link">Смотреть все</a>
+                        </h2>
 
                         <div class="row catalog owl-carousel">
                             <div class="item">
@@ -385,26 +393,257 @@
                             </div>
                         </div>
 
-                        <h2>Спецпредложения</h2>
+                        <h2 class="name">
+                            <span>Спецпредложения</span>
+                            <a href="" class="link">Смотреть все</a>
+                        </h2>
 
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <p>Lorem2 ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, libero, ut error quia culpa hic architecto, corrupti esse totam quos perferendis maiores, earum itaque sit ad harum eius consequatur recusandae?</p>
+                        <div class="row catalog owl-carousel">
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            <img src="lib/img/icon-state-action.png" alt="">
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-3">
-                                <p>Lorem2 ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, libero, ut error quia culpa hic architecto, corrupti esse totam quos perferendis maiores, earum itaque sit ad harum eius consequatur recusandae?</p>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_02.jpg" alt="Электрическая печь Sharp">
+                                    <div class="itemStateSet">
+                                        <div class="left">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            <img src="lib/img/icon-state-action.png" alt="">
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-on.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Sharp</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-3">
-                                <p>Lorem2 ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, libero, ut error quia culpa hic architecto, corrupti esse totam quos perferendis maiores, earum itaque sit ad harum eius consequatur recusandae?</p>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
+                                    <div class="itemStateSet">
+                                        <div class="left">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            <img src="lib/img/icon-state-action.png" alt="">
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Cumza</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-3">
-                                <p>Lorem2 ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, libero, ut error quia culpa hic architecto, corrupti esse totam quos perferendis maiores, earum itaque sit ad harum eius consequatur recusandae?</p>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            <img src="lib/img/icon-state-action.png" alt="">
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
+                                    <div class="itemStateSet">
+                                        <div class="left">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            <img src="lib/img/icon-state-action.png" alt="">
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Cumza</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            <img src="lib/img/icon-state-action.png" alt="">
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                         <h2>О компании</h2>
                         <p>Наша компания, это эталон качества и надежности на рынке строительства бань и саун. Мы уже более 10 лет специализируется в области элитного строительства саун, отделке парных, строительства бассейнов и СПА комплексов в Москве и ближнем Подмосковье.  В кротчайшие сроки и на высочайшем уровне мы поможем вам реализовать как стандартный, так и эксклюзивный проект идеальной бани вашей мечты.</p>
                         <p>Наши специалисты имеют большой опыт в сфере банного дела и на высоком профессиональном уровне владеют  сложнейшими дизайнерскими, техническими и архитектурными технологиями для воплощения в жизнь вашего проекта.</p>
+                        <p>&nbsp;</p>
+
+                        <h2>Преимущества</h2>
+                        <div class="row advantage">
+                            <div class="col-md-2">
+                                <img src="assets/img/advantage_01.png" alt="">
+                                <div class="name">Доставка по всей России</div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/advantage_02.png" alt="">
+                                <div class="name">Качественные товары по доступным ценам</div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/advantage_03.png" alt="">
+                                <div class="name">Различные формы оплаты</div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/advantage_04.png" alt="">
+                                <div class="name">Прямые поставки оригинальной продукции</div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/advantage_05.png" alt="">
+                                <div class="name">Различные акции и скидки</div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="assets/img/advantage_06.png" alt="">
+                                <div class="name">Удобное время доставки</div>
+                            </div>
+                        </div>
+
+                        <h2>Бренды</h2>
+                        <div class="row brands owl-carousel">
+                            <div class="item">
+                                <img src="assets/img/brend_01.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_02.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_03.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_04.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_05.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_06.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_01.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_02.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_03.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_04.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_05.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/brend_06.jpg" alt="">
+                            </div>
+                        </div>
+
                     </div>
+
                 </div> 
             </div>
         </div>

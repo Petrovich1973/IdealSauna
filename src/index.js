@@ -42,16 +42,17 @@ $(document).ready(function() {
 
 	$('.spinner').css({
 		height: WindowSize.height()
-	})
+	})	
 
 	$('.layout').css({
 		opacity: 1
 	})
+
 	//DocumentHeader.init()
 	//fetchData()
 	WindowSize.init()
 
-	$('.owl-carousel').owlCarousel({
+	$('.row.catalog').owlCarousel({
 		items: 4,
 		loop: true,
 		nav: true,
@@ -67,7 +68,25 @@ $(document).ready(function() {
 	            items: 4
 	        }
 	    }
-	});
+	})
+
+	$('.row.brands').owlCarousel({
+		items: 6,
+		loop: true,
+		nav: true,
+		margin: 8,
+		stagePadding: 6,
+		lazyLoad: false,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+	    responsive:{
+	        0:{
+	            items: 3
+	        },
+	        1200:{
+	            items: 6
+	        }
+	    }
+	})
 
 	setTimeout(function() {
 		slideHideAnimate()
@@ -76,6 +95,14 @@ $(document).ready(function() {
 	$('.topBar .nav li > a').click(function () {
 		if( $(this).next().hasClass('sub') ) return false
     })
+
+	$('a.smooth-scroll').on('click', function(event) {
+	    var $anchor = $(this);
+	    $('html, body').stop().animate({
+	        scrollTop: $($anchor.attr('href')).offset().top
+	    }, 1500, 'easeInOutExpo');
+	    event.preventDefault();
+	});
 
     $('[data-toggle="popover"]').popover()
 
