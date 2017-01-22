@@ -55,8 +55,8 @@ $(document).ready(function() {
 		slideHideAnimate()
 	}, 700)
 
-	$('.topBar .nav > li > a').click(function () {
-		return false
+	$('.topBar .nav li > a').click(function () {
+		if( $(this).next().hasClass('sub') ) return false
     })
 
     $('[data-toggle="popover"]').popover()
