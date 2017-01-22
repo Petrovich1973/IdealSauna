@@ -304,7 +304,7 @@ a:focus, a:hover {
 
 
 .mainBox {
-	padding: 15px 0;
+	padding: 30px 0;
 }
 
 .phone:hover .vibro {
@@ -501,19 +501,27 @@ a:focus, a:hover {
 }
 
 .row.catalog {
-	margin-left: -5px;
-	margin-right: -5px;
+	margin-left: -6px;
+	margin-right: -6px;
 }
 .row.catalog .col-xs-3 {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.row.catalog .item {
+	padding-top: 10px;
+}
 .row.catalog .thumbnail {
 	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.14);
+}
+.row.catalog .thumbnail > img {
+	width: auto;
 }
 .row.catalog .thumbnail a > img {
 	display: inline-block;
 	vertical-align: middle;
+	width: auto;
 }
 .row.catalog .thumbnail a > span {
 	display: inline-block;
@@ -577,6 +585,7 @@ a:focus, a:hover {
 .row.catalog .itemStateSet img {
 	display: inline-block;
 	margin: 0 3px;
+	width: auto;
 }
 
 
@@ -586,6 +595,47 @@ a:focus, a:hover {
 	background-color: #ededed;
 	min-height: 320px;
 }
+
+
+
+.carousel-caption h1 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.carousel-caption .btn {
+    text-shadow: none;
+    background-color: #0096ff;
+}
+
+.owl-carousel {
+	width: auto;
+	min-width: 100%;
+}
+.owl-carousel .owl-nav > * {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	border-radius: 50%;
+	background-color: #ff8338;
+	color: #fff;
+	font-size: 22px;
+	line-height: 1;
+	text-align: center;
+	padding-top: 3px;
+}
+.owl-carousel .owl-nav .owl-prev {
+	left: -10px;
+}
+.owl-carousel .owl-nav .owl-next {
+	right: -10px;
+	padding-left: 4px;
+}
+
+
+
+
 
 
 
@@ -620,5 +670,12 @@ a:focus, a:hover {
 	}	
 	.row.catalog .thumbnail a > span {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+	    right: 10%;
+	    left: 10%;
 	}
 }

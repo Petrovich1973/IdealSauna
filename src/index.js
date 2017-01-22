@@ -51,6 +51,24 @@ $(document).ready(function() {
 	//fetchData()
 	WindowSize.init()
 
+	$('.owl-carousel').owlCarousel({
+		items: 4,
+		loop: true,
+		nav: true,
+		margin: 8,
+		stagePadding: 6,
+		lazyLoad: false,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+	    responsive:{
+	        0:{
+	            items: 3
+	        },
+	        1200:{
+	            items: 4
+	        }
+	    }
+	});
+
 	setTimeout(function() {
 		slideHideAnimate()
 	}, 700)
