@@ -43,6 +43,9 @@ a:focus, a:hover {
 	color: #fff;
 	border-radius: 50%;
 }
+.smooth-scroll .icon .fa {
+	-webkit-text-stroke: 2px white;
+}
 
 .layout {
 	opacity: 0;

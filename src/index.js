@@ -96,12 +96,12 @@ $(document).ready(function() {
 		if( $(this).next().hasClass('sub') ) return false
     })
 
-	$('a.smooth-scroll').on('click', function(event) {
+	$('a.smooth-scroll').on('click', function(e) {
 	    var $anchor = $(this);
 	    $('html, body').stop().animate({
 	        scrollTop: $($anchor.attr('href')).offset().top
-	    }, 1500, 'easeInOutExpo');
-	    event.preventDefault();
+	    }, 500);
+	    e.preventDefault();
 	});
 
     $('[data-toggle="popover"]').popover()
