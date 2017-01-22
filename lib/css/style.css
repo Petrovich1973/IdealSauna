@@ -360,14 +360,14 @@ a:focus, a:hover {
 .triangle-border.top:before {
     top: -14px;
     bottom: auto;
-    left: 46px;
+    left: 12px;
     right: auto;
     border-width: 0px 14px 14px;
 }
 .triangle-border.top:after {
     top: -13px;
     bottom: auto;
-    left: 47px;
+    left: 13px;
     right: auto;
     border-width: 0 13px 13px;
 }
@@ -482,12 +482,6 @@ a:focus, a:hover {
 }
 .nav .nav_group {
 	padding: 0 10px;
-}
-.nav .nav_group:first-child {
-	padding-left: 0;
-}
-.nav .nav_group:last-child {
-	padding-right: 0;
 }
 .nav_group_label {
 	text-transform: uppercase;
@@ -672,6 +666,7 @@ h2.name .link {
     text-shadow: none;
     background-color: #0096ff;
     text-transform: uppercase;
+    font-size: 100%;
 }
 
 .owl-carousel {
@@ -707,7 +702,36 @@ h2.name .link {
 
 
 
-/*@media (max-width: 575px) {*/
+
+
+@media (max-width: 1200px) {
+	body {
+	    font-size: 15px;
+	}	
+	.row.catalog .thumbnail a > span {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.container {
+	    width: auto;
+	}
+	.topBar .nav > li > a span {
+		display: none;
+	}	
+	.footer_nav .nav {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+	    right: 10%;
+	    left: 10%;
+	}
+}
+
 @media all and (max-width: 575px) {
 	body .topBar .nav > li > ul.level_2 > li > .level_3 {
 		display: block;
@@ -727,29 +751,25 @@ h2.name .link {
 	.topBar .nav > li > span {
 		display: none;
 	}
-}
-
-@media (max-width: 991px) {
-	.container {
-	    width: auto;
-	}
-	.topBar .nav > li > a span {
+	.bar {
 		display: none;
 	}
-}
-
-@media (max-width: 1200px) {
-	body {
-	    font-size: 15px;
-	}	
+	h2.name {
+		display: block;
+	}
+	h2.name .link {
+		display: block;
+	}
 	.row.catalog .thumbnail a > span {
+		display: inline-block;
+	}
+	.carousel.slide {
 		display: none;
 	}
-}
-
-@media screen and (min-width: 768px) {
-	.carousel-caption {
-	    right: 10%;
-	    left: 10%;
+	.brands.owl-carousel .owl-nav .owl-prev {
+		left: 10px;
+	}
+	.brands.owl-carousel .owl-nav .owl-next {
+		right: 10px;
 	}
 }

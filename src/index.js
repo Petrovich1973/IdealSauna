@@ -62,6 +62,9 @@ $(document).ready(function() {
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	    responsive:{
 	        0:{
+	            items: 1
+	        },
+	        575:{
 	            items: 3
 	        },
 	        1200:{
@@ -71,7 +74,7 @@ $(document).ready(function() {
 	})
 
 	$('.row.brands').owlCarousel({
-		items: 6,
+		items: 7,
 		loop: true,
 		nav: true,
 		margin: 8,
@@ -80,10 +83,13 @@ $(document).ready(function() {
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	    responsive:{
 	        0:{
-	            items: 3
+	            items: 2
+	        },
+	        575:{
+	            items: 4
 	        },
 	        1200:{
-	            items: 6
+	            items: 7
 	        }
 	    }
 	})
