@@ -6,26 +6,32 @@
 import WindowSize from './utils/WindowSize'
 
 
-let scrollTop = function() {
-	$(document).scrollTop(0)
-}
+// let scrollTop = function() {
+// 	$(document).scrollTop(0)
+// }
 
 var num = 88;
+var margin;
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
 	  	$('.topBar').addClass('navbar-fixed-top')
-	  	$('.mainBox').css('margin-top', '44px') 
+	  	$('.mainBox').css('margin-top', margin) 
     } else {
 		$('.topBar').removeClass('navbar-fixed-top')
 		$('.mainBox').css('margin-top', '0px') 
     }
 })
 
+var heightTopBar = function() {
+	WindowSize.width() < 992 ? margin = '88px' : margin = '44px';
+}
+
 
 $(document).ready(function() {
 
-	scrollTop()
+	heightTopBar()
+	//scrollTop()
 
 	// $('.spinner').css({
 	// 	height: WindowSize.height()
@@ -51,9 +57,18 @@ $(document).ready(function() {
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	    responsive:{
 	        0:{
-	            items: 1
+	            items: 1,
+				margin: 100
 	        },
-	        575:{
+	        450:{
+	            items: 2,
+				slideBy: 2
+	        },
+	        660:{
+	            items: 4,
+				slideBy: 4
+	        },
+	        992:{
 	            items: 3,
 				slideBy: 3
 	        },
@@ -64,22 +79,30 @@ $(document).ready(function() {
 	    }
 	})
 
-	$('.row.brands').owlCarousel({
+	$('.brands').owlCarousel({
 		items: 7,
 		loop: true,
 		nav: true,
-		margin: 8,
-		stagePadding: 6,
+		margin: 0,
+		stagePadding: 60,
 		lazyLoad: false,
-		smartSpeed:300,
-		slideBy: 4,
+		smartSpeed: 300,
+		slideBy: 1,
+		merge: false,
+		autoWidth: true,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	    responsive:{
 	        0:{
-	            items: 1
+	            items: 2
 	        },
-	        575:{
+	        450:{
 	            items: 4
+	        },
+	        660:{
+	            items: 6
+	        },
+	        992:{
+	            items: 5
 	        },
 	        1200:{
 	            items: 7
@@ -109,5 +132,7 @@ $(document).ready(function() {
 $(window).resize(function() {
 
 	WindowSize.init()
+
+	heightTopBar()
 
 })

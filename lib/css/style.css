@@ -430,10 +430,18 @@ hr {
     flex-flow: row wrap;
 }
 
-.bar {
+.bar,
+.content {
 	position: relative;
-	padding-top: 0;
-	padding-bottom: 50px;
+    min-height: 1px;
+	padding: 0 15px 50px;
+	float: left;
+}
+.content {
+	width: 75%;
+}
+.bar {
+	width: 25%;
 }
 .bar h4 {
 	text-transform: uppercase;
@@ -512,7 +520,7 @@ hr {
 	display: none;
 }
 .nav .nav_group {
-	padding: 0 10px;
+	padding: 0 10px 20px;
 }
 .nav_group_label {
 	text-transform: uppercase;
@@ -667,20 +675,27 @@ h2.name .link {
 }
 
 
-.row.advantage {
+.advantage {
 	margin-top: 18px;
+	display: flex;
+	align-items: flex-start;
 }
-.row.advantage > * {
+.advantage > * {
+	width: 16.66666667%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 	padding-bottom: 15px;
 }
-.row.advantage > * > img {
+.advantage > * > img {
 	display: block;
 	max-width: 100%;
 	min-width: 30px;
 	min-height: 30px;
 	margin: 0 auto 10px;
 }
-.row.advantage > * > .name {
+.advantage > * > .name {
 	display: block;
 	line-height: 1.4em;
 	font-size: 80%;
@@ -688,16 +703,22 @@ h2.name .link {
 	text-align: center;
 }
 
-.row.brands.owl-carousel .owl-stage {
-  display: flex;
-  align-items: center;
+.brands.owl-carousel {
+	padding: 0 40px;
 }
-.row.brands .item img {
+.brands.owl-carousel .owl-stage {
+	display: flex;
+	align-items: center;
+}
+.brands.owl-carousel .owl-item a {
+	display: block;
+	padding: 0 10px;
+}
+.brands.owl-carousel .owl-item img {
 	display: block;
 	width: auto;
 	margin: 0 auto;
 }
-
 
 .banner {
 	margin: 50px 0;
@@ -786,10 +807,15 @@ h2.name .link {
 		display: none;
 	}	
 	.footer_nav .nav {
-		display: block;
+		flex-flow: row wrap;
+		justify-content: space-around;
 	}
 	.bar {
 		display: none;
+	}
+	.content {
+		width: auto;
+		float: none;
 	}
 	.carousel.slide {
 		display: none;
@@ -836,5 +862,12 @@ h2.name .link {
 	}
 	.brands.owl-carousel .owl-nav .owl-next {
 		right: 10px;
+	}
+	.advantage {
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+	.advantage > * {
+		width: 33%;
 	}
 }
