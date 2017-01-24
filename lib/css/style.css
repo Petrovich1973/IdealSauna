@@ -19,6 +19,9 @@ a:focus, a:hover {
 	color: #0096ff;
 	text-decoration: none;
 }
+hr {
+	border-color: #7b7b7b;
+}
 .spinner {
 	text-align: center;
 	box-sizing: border-box;
@@ -28,9 +31,11 @@ a:focus, a:hover {
 }
 
 .smooth-scroll {
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+	right: 30px;
 	display: block;
-	max-width: 100%;
-	margin: 30px auto;
 	text-align: center;
 }
 .smooth-scroll .icon {
@@ -42,6 +47,9 @@ a:focus, a:hover {
 	background-color: rgba(0,150,255,0.3);
 	color: #fff;
 	border-radius: 50%;
+}
+.smooth-scroll:hover .icon {
+	background-color: rgba(0,150,255,1);
 }
 .smooth-scroll .icon .fa {
 	-webkit-text-stroke: 2px white;
@@ -183,21 +191,34 @@ a:focus, a:hover {
 	color: #fff;
 }
 .topBar .form-control {
-	border-color: #fff;
+	border-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.topBar .form-control:focus {
+	border-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 .topBar .nav {
-	display: flex;
-	justify-content: flex-start;
-	align-items: stretch;
+	display: block;
+	float: left;
+	/*justify-content: flex-start;*/
+	/*align-items: stretch;*/
 	background-color: transparent;
 	border: none;
 	padding: 0;
 	margin: 0;
 }
+.topBar .nav:before,
+.topBar .nav:after {
+	display: none;
+}
 .topBar .nav > li {
 	padding: 0;
 	margin: 0;
 	position: relative;
+	display: inline-block;
 }
 .topBar .nav > li > a {
 	display: flex;
@@ -313,9 +334,6 @@ a:focus, a:hover {
 	opacity: 0;
 }
 
-.topBar .nav > li > span {
-	transform: scale(.8,.8)
-}
 .topBar .fa-search {
 	transform: rotateY(180deg);
 	color: #0096ff;
@@ -358,18 +376,18 @@ a:focus, a:hover {
     width: 0;
 }
 .triangle-border.top:before {
-    top: -14px;
+    top: -8px;
     bottom: auto;
-    left: 12px;
+    left: 39px;
     right: auto;
-    border-width: 0px 14px 14px;
+    border-width: 0px 8px 8px;
 }
 .triangle-border.top:after {
-    top: -13px;
+    top: -7px;
     bottom: auto;
-    left: 13px;
+    left: 40px;
     right: auto;
-    border-width: 0 13px 13px;
+    border-width: 0 7px 7px;
 }
 .triangle-border:after {
     content: "";
@@ -407,14 +425,22 @@ a:focus, a:hover {
 }
 
 
-
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .bar {
-	padding-top: 23px;
-	padding-bottom: 23px;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 50px;
 }
 .bar h4 {
 	text-transform: uppercase;
+	font-weight: 600;
+}
+.bar h4:first-child {
+	margin-top: 0;
 }
 .bar .menu {
 	margin: 0 0 50px;
@@ -436,8 +462,13 @@ a:focus, a:hover {
 	background-color: rgba(183,183,183,0.3);
 	margin-left: -5px;
 	padding-left: 5px;
+	margin-right: -5px;
+	padding-right: 5px;
 }
-
+.bar hr {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
 
 
 
@@ -498,6 +529,11 @@ a:focus, a:hover {
 	font-size: 90%;
 	font-weight: 300;
 }
+.nav_group_list a img {
+	display: block;
+	width: 32px;
+	height: 32px;
+}
 .nav_group_list a:focus, 
 .nav_group_list a:hover {
 	color: #0096ff;
@@ -542,7 +578,14 @@ h2.name .link {
 }
 .row.catalog .thumbnail {
 	position: relative;
-	box-shadow: 0 0 10px rgba(0,0,0,0.14);
+	/*box-shadow: 0 0 6px rgba(0,0,0,0.14);*/
+	border: 1px solid transparent;
+	padding-top: 13px;
+}
+.row.catalog .thumbnail:hover {
+	border: 1px solid #ddd;
+}
+.row.catalog .thumbnail .caption {
 }
 .row.catalog .thumbnail > img {
 	width: auto;
@@ -562,16 +605,19 @@ h2.name .link {
 	border-color: #0096ff;
 }
 .row.catalog h3 {
-	font-size: 110%;
-	white-space: nowrap;
+	font-size: 100%;
+	/*white-space: nowrap;
 	overflow: hidden;
-	text-overflow: ellipsis;
+	text-overflow: ellipsis;*/
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 10px;
+	height: 56px;
+	overflow: hidden;
 }
 .row.catalog .manufacturerCountry {
 	font-size: 90%;
 	color: #989898;
+	display: none;
 }
 .row.catalog .line:after {
 	display: block;
@@ -582,6 +628,9 @@ h2.name .link {
 	float: right;
 	white-space: nowrap;
     padding: 4px 12px;
+}
+.row.catalog .btn:hover {
+	background-color:#0087e5;
 }
 .row.catalog .price {
 	float: left;
@@ -605,10 +654,10 @@ h2.name .link {
 }
 .row.catalog .itemStateSet .left {
 	float: left;
-	padding-left: 3px;
+	padding-left: 11px;
 }
 .row.catalog .itemStateSet .right {
-	float: right;
+	/*float: right;*/
 	padding-right: 3px;
 }
 .row.catalog .itemStateSet img {
@@ -674,7 +723,7 @@ h2.name .link {
 	min-width: 100%;
 	position: relative;
 }
-.owl-carousel .owl-nav > * {
+.owl-nav > * {
 	width: 32px;
 	height: 32px;
 	position: absolute;
@@ -688,16 +737,32 @@ h2.name .link {
 	text-align: center;
 	padding-top: 3px;
 }
-.owl-carousel .owl-nav .owl-prev {
-	left: -10px;
+.owl-nav > *:hover,
+.owl-nav > *:focus {
+	color: #fff;
 }
-.owl-carousel .owl-nav .owl-next {
+.owl-nav .owl-prev {
+	left: -10px;
+	padding-right: 2px;
+}
+.owl-nav .owl-next {
 	right: -10px;
 	padding-left: 4px;
 }
 
 
-
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 20px;
+    z-index: 15;
+    width: auto;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+}
 
 
 
@@ -722,6 +787,12 @@ h2.name .link {
 	}	
 	.footer_nav .nav {
 		display: block;
+	}
+	.bar {
+		display: none;
+	}
+	.carousel.slide {
+		display: none;
 	}
 }
 
@@ -751,9 +822,6 @@ h2.name .link {
 	.topBar .nav > li > span {
 		display: none;
 	}
-	.bar {
-		display: none;
-	}
 	h2.name {
 		display: block;
 	}
@@ -762,9 +830,6 @@ h2.name .link {
 	}
 	.row.catalog .thumbnail a > span {
 		display: inline-block;
-	}
-	.carousel.slide {
-		display: none;
 	}
 	.brands.owl-carousel .owl-nav .owl-prev {
 		left: 10px;

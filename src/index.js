@@ -6,19 +6,6 @@
 import WindowSize from './utils/WindowSize'
 
 
-
-let slideHideAnimate = function() {
-	$('.spinner')
-	.animate({
-		opacity: 0,
-		height: 0,
-		padding: 0
-	}, 1000, function() {
-		$('.phone img').addClass('vibro')
-	})
-	//.slideUp(1000)
-}
-
 let scrollTop = function() {
 	$(document).scrollTop(0)
 }
@@ -40,10 +27,10 @@ $(document).ready(function() {
 
 	scrollTop()
 
-	$('.spinner').css({
-		height: WindowSize.height()
-	})	
-
+	// $('.spinner').css({
+	// 	height: WindowSize.height()
+	// })	
+	$('.phone img').addClass('vibro')
 	$('.layout').css({
 		opacity: 1
 	})
@@ -59,16 +46,20 @@ $(document).ready(function() {
 		margin: 8,
 		stagePadding: 6,
 		lazyLoad: false,
+		smartSpeed:300,
+		slideBy: 4,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	    responsive:{
 	        0:{
 	            items: 1
 	        },
 	        575:{
-	            items: 3
+	            items: 3,
+				slideBy: 3
 	        },
 	        1200:{
-	            items: 4
+	            items: 4,
+				slideBy: 4
 	        }
 	    }
 	})
@@ -80,10 +71,12 @@ $(document).ready(function() {
 		margin: 8,
 		stagePadding: 6,
 		lazyLoad: false,
+		smartSpeed:300,
+		slideBy: 4,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 	    responsive:{
 	        0:{
-	            items: 2
+	            items: 1
 	        },
 	        575:{
 	            items: 4
@@ -94,9 +87,6 @@ $(document).ready(function() {
 	    }
 	})
 
-	setTimeout(function() {
-		slideHideAnimate()
-	}, 700)
 
 	$('.topBar .nav li > a').click(function () {
 		if( $(this).next().hasClass('sub') ) return false

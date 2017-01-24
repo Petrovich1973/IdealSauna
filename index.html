@@ -6,18 +6,18 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>IdealSauna</title>
 
-    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=4">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=4">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=4">
-    <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css?v=4"> -->
-    <link rel="stylesheet" href="lib/fonts/fonts.css?v=4">
-	<link rel="stylesheet" href="lib/css/style.css?v=4">
-	<link rel="stylesheet" href="lib/css/font-awesome.min.css?v=4">
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=7">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=7">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=7">
+    <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css?v=7"> -->
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=7">
+	<link rel="stylesheet" href="lib/css/style.css?v=7">
+	<link rel="stylesheet" href="lib/css/font-awesome.min.css?v=7">
 
 </head>
 <body>
 
-	<h1 class="spinner">Загрузка...</h1>
+	<!-- <h1 class="spinner">Загрузка...</h1> -->
     <div class="infoTemp" style="position: fixed;bottom: 0;right: 0"></div>
 
     <div class="layout" id="top">
@@ -35,7 +35,7 @@
                             </div>
                             <div class="tableCell text-nowrap">
                                 <strong class="number">+7 (495) 215-05-46</strong>
-                                <a href=""><span>Позвоните мне</span></a>
+                                <a href=""><span>Перезвоните мне</span></a>
                             </div>                        
                         </div> 
                     </div>
@@ -48,7 +48,7 @@
                             <li>
                                 <a href=""><span>Доставка и оплата</span></a>
                             </li>
-                            <li class="selected">
+                            <li>
                                 <a href=""><span>Акции</span></a>
                             </li>
                             <li>
@@ -135,14 +135,16 @@
 
         <div class="mainBox">
             <div class="container">
-                <div class="row">
+                <div class="row flex">
                     <div class="col-sm-3 bar">
+                        <h4>Каталог</h4>
+                        <hr/>
                         <ul class="menu">
                             <li><a href=""><span>Печи для саун и бань</span></a></li>
                             <li><a href=""><span>Облицовки для печей</span></a></li>
                             <li><a href=""><span>Парогенераторы для хамама</span></a></li>
                             <li><a href=""><span>Плитка для сауны и бани</span></a></li>
-                            <li class="active"><a href=""><span>Гималайская соль</span></a></li>
+                            <li><a href=""><span>Гималайская соль</span></a></li>
                             <li><a href=""><span>Дымоходы</span></a></li>
                             <li><a href=""><span>Двери</span></a></li>
                             <li><a href=""><span>Стеклянные перегородки для саун</span></a></li>
@@ -184,6 +186,8 @@
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1"></li>
                                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active"> <img src="assets/img/slide_01.jpg" style="width:100%" alt="First slide">
@@ -213,8 +217,29 @@
                                     </div>
                                   </div>
                                 </div>
+                                <div class="item"> <img src="assets/img/slide_04.jpg" style="width:100%" data-src="" alt="Third slide">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>Создай свой проект онлайн</h1>
+                                      <p>Мы придумали для вас конструктор, где вы сможете менять расположение элементов,<br>выбирать составляющие, материалы, скачивать свои проекты в PDF,<br>показывайте их семье, друзьям, коллегам и воплощать мечту в реальность </p>
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">онлайн конструктор</a></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="item"> <img src="assets/img/slide_05.jpg" style="width:100%" data-src="" alt="Third slide">
+                                  <div class="container">
+                                    <div class="carousel-caption">
+                                      <h1>Создай свой проект онлайн</h1>
+                                      <p>Мы придумали для вас конструктор, где вы сможете менять расположение элементов,<br>выбирать составляющие, материалы, скачивать свои проекты в PDF,<br>показывайте их семье, друзьям, коллегам и воплощать мечту в реальность </p>
+                                      <p><a class="btn btn-lg btn-primary" href="#" role="button">онлайн конструктор</a></p>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
-                            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+                            <div class="owl-nav">
+                                <a href="#myCarousel" data-slide="prev" class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                <a href="#myCarousel" data-slide="next" class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            </div>
                         </div>
 
                         <h2 class="name">
@@ -227,9 +252,177 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-on.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus печь Электрическая Zeus печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_02.jpg" alt="Электрическая печь Sharp">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-on.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Sharp ектрическая печь Sharp</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Cumza ектрическая печь Sharp</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Cumza</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -255,9 +448,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_02.jpg" alt="Электрическая печь Sharp">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-off.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-on.png" alt="">
@@ -283,9 +476,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-off.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -311,9 +504,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-on.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -339,9 +532,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-off.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -367,9 +560,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-on.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -403,9 +596,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-on.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -431,9 +624,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_02.jpg" alt="Электрическая печь Sharp">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-off.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-on.png" alt="">
@@ -459,9 +652,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-off.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -487,9 +680,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-on.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -515,9 +708,9 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-off.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -543,9 +736,177 @@
                                 <div class="thumbnail">
                                     <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
                                     <div class="itemStateSet">
-                                        <div class="left">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
                                             <img src="lib/img/icon-state-favorite-on.png" alt="">
-                                            <img src="lib/img/icon-state-action.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_02.jpg" alt="Электрическая печь Sharp">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-on.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Sharp</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Cumza</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Zeus</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_03.jpg" alt="Электрическая печь Cumza">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-off.png" alt="">
+                                            
+                                        </div>
+                                        <div class="right">
+                                            <img src="lib/img/icon-state-compare-off.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Электрическая печь Cumza</h3>
+                                        <p class="manufacturerCountry">Германия</p>
+                                        <div class="line">
+                                            <div class="price">
+                                                <div class="current"><span>120 450</span> <span>р.</span></div>
+                                                <div class="old"><span>132 200</span> <span>р.</span></div>
+                                            </div>
+                                            <a href="#" class="btn btn-primary" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/thumb_01.jpg" alt="Электрическая печь Zeus">
+                                    <div class="itemStateSet">
+                                        <div class="left"><img src="lib/img/icon-state-action.png" alt="">
+                                            <img src="lib/img/icon-state-favorite-on.png" alt="">
+                                            
                                         </div>
                                         <div class="right">
                                             <img src="lib/img/icon-state-compare-off.png" alt="">
@@ -582,7 +943,7 @@
                             </div>
                             <div class="col-md-2">
                                 <img src="assets/img/advantage_02.png" alt="">
-                                <div class="name">Качественные товары по доступным ценам</div>
+                                <div class="name">Качественные товары<br>по доступным ценам</div>
                             </div>
                             <div class="col-md-2">
                                 <img src="assets/img/advantage_03.png" alt="">
@@ -594,7 +955,7 @@
                             </div>
                             <div class="col-md-2">
                                 <img src="assets/img/advantage_05.png" alt="">
-                                <div class="name">Различные акции и скидки</div>
+                                <div class="name">Различные акции<br>и скидки</div>
                             </div>
                             <div class="col-md-2">
                                 <img src="assets/img/advantage_06.png" alt="">
@@ -735,12 +1096,13 @@
 
 	<div class="root" id="root"></div>
 
-    <!-- <script src="lib/jquery/jquery-3.1.1.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- <script src="lib/bootstrap3/js/bootstrap.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="lib/owlCarousel2/js/owl.carousel.min.js"></script>
-    <script src="dist/bundle.js"></script>
+    <!-- <script src="lib/jquery/jquery-3.1.1.min.js?v=7"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?v=7"></script>
+    <!-- <script src="lib/bootstrap3/js/bootstrap.min.js?v=7"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?v=7"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=7"></script>
+    
+    <script src="dist/bundle.js?v=7"></script>
 
 </body>
 </html>
