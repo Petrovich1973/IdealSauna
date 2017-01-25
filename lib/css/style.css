@@ -429,7 +429,9 @@ hr {
     display: flex;
     flex-flow: row wrap;
 }
-
+.normalizeHeight {
+	display: flex;
+}
 .bar,
 .content {
 	position: relative;
@@ -819,6 +821,9 @@ h2.name .link {
 	}
 	.carousel.slide {
 		display: none;
+	}	
+	.normalizeHeight {
+		display: block;
 	}
 }
 
