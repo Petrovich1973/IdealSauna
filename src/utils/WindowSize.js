@@ -15,7 +15,7 @@ var WindowSize = (function() {
         },
         upadareWidthWindow() {
             //console.log( this.width(), this.height() )
-            $('.infoTemp').text( this.width() + ' - ' + this.height() )
+            $('.developmentInfo').text( this.width() + ' - ' + this.height() )
         }
     }
 }())

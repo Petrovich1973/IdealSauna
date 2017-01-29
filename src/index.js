@@ -30,88 +30,97 @@ var heightTopBar = function() {
 
 $(document).ready(function() {
 
-	heightTopBar()
+	w3IncludeHTML()
 	//scrollTop()
 
 	// $('.spinner').css({
 	// 	height: WindowSize.height()
-	// })	
-	$('.phone img').addClass('vibro')
-	$('.layout').css({
-		opacity: 1
-	})
+	// })
+
+    setTimeout(function() {
+
+		heightTopBar()
+
+		$('.phone img').addClass('vibro')
+
+		$('.layout').animate({
+			opacity: 1
+		}, 700)
+
+		$('.row.catalog').owlCarousel({
+			items: 4,
+			loop: true,
+			nav: true,
+			margin: 8,
+			stagePadding: 6,
+			lazyLoad: false,
+			smartSpeed:300,
+			slideBy: 4,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+		    responsive:{
+		        0:{
+		            items: 1,
+					margin: 100
+		        },
+		        450:{
+		            items: 2,
+					slideBy: 2
+		        },
+		        660:{
+		            items: 4,
+					slideBy: 4
+		        },
+		        992:{
+		            items: 3,
+					slideBy: 3
+		        },
+		        1200:{
+		            items: 4,
+					slideBy: 4
+		        }
+		    }
+		})
+
+		$('.brands').owlCarousel({
+			items: 7,
+			loop: true,
+			nav: true,
+			margin: 0,
+			stagePadding: 60,
+			lazyLoad: false,
+			smartSpeed: 300,
+			slideBy: 1,
+			merge: false,
+			autoWidth: true,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+		    responsive:{
+		        0:{
+		            items: 2
+		        },
+		        450:{
+		            items: 4
+		        },
+		        660:{
+		            items: 6
+		        },
+		        992:{
+		            items: 5
+		        },
+		        1200:{
+		            items: 7
+		        }
+		    }
+		})
+
+    }, 200)
+
 
 	//DocumentHeader.init()
 	//fetchData()
 	WindowSize.init()
 
-	$('.row.catalog').owlCarousel({
-		items: 4,
-		loop: true,
-		nav: true,
-		margin: 8,
-		stagePadding: 6,
-		lazyLoad: false,
-		smartSpeed:300,
-		slideBy: 4,
-		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-	    responsive:{
-	        0:{
-	            items: 1,
-				margin: 100
-	        },
-	        450:{
-	            items: 2,
-				slideBy: 2
-	        },
-	        660:{
-	            items: 4,
-				slideBy: 4
-	        },
-	        992:{
-	            items: 3,
-				slideBy: 3
-	        },
-	        1200:{
-	            items: 4,
-				slideBy: 4
-	        }
-	    }
-	})
 
-	$('.brands').owlCarousel({
-		items: 7,
-		loop: true,
-		nav: true,
-		margin: 0,
-		stagePadding: 60,
-		lazyLoad: false,
-		smartSpeed: 300,
-		slideBy: 1,
-		merge: false,
-		autoWidth: true,
-		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-	    responsive:{
-	        0:{
-	            items: 2
-	        },
-	        450:{
-	            items: 4
-	        },
-	        660:{
-	            items: 6
-	        },
-	        992:{
-	            items: 5
-	        },
-	        1200:{
-	            items: 7
-	        }
-	    }
-	})
-
-
-	$('.topBar .nav li > a').click(function () {
+	$('body').on('click', '.topBar .nav li > a', function () {
 		if( $(this).next().hasClass('sub') ) return false
     })
 
@@ -121,9 +130,7 @@ $(document).ready(function() {
 	        scrollTop: $($anchor.attr('href')).offset().top
 	    }, 500);
 	    e.preventDefault();
-	});
-
-    $('[data-toggle="popover"]').popover()
+	})
 
 	console.debug('document.ready')
 
