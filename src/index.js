@@ -82,6 +82,25 @@ $(document).ready(function() {
 			});
 		});
 
+		if( $("#productGalleryImage") ) {
+
+	        $("#productGalleryImage").elevateZoom({
+	            zoomType: 'inner', 
+	            containLensZoom: true, 
+	            gallery: 'productGalleryListThumbs',
+	            cursor: 'pointer', 
+	            galleryActiveClass: 'active'
+	        })
+
+	        $("#productGalleryImage").bind("click", function(e) {  
+	            var ez =   $('#productGalleryImage').data('elevateZoom');
+	            ez.closeAll();
+	            $.fancybox( ez.getGalleryList() );
+	            return false;
+	        })
+        
+        }
+
 		$('.row.catalog').owlCarousel({
 			items: 4,
 			loop: true,

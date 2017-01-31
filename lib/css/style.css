@@ -1080,6 +1080,32 @@ h2.name .link {
 
 
 
+.productGallery {
+  width: 360px;
+}
+
+#productGalleryListThumbs {
+  display: flex;
+  width: 100%;
+}
+#productGalleryListThumbs a {
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+}
+#productGalleryListThumbs a img {
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+#productGalleryListThumbs a.active img {
+  border: 1px solid #000;
+}
+
+
+
+
 
 @media (max-width: 1200px) {
 	body {
