@@ -1,14 +1,4 @@
-//import $ from 'jquery'
-
-//import DocumentHeader from './modules/DocumentHeader'
-//import Table from './modules/Table'
-
 import WindowSize from './utils/WindowSize'
-
-
-// let scrollTop = function() {
-// 	$(document).scrollTop(0)
-// }
 
 var num = 88;
 var margin;
@@ -27,17 +17,38 @@ var heightTopBar = function() {
 	WindowSize.width() < 992 ? margin = '88px' : margin = '44px';
 }
 
+function w3IncludeHTML(fn) {
+  var z, i, a, file, xhttp;
+  w3IncludeHTML.c = w3IncludeHTML.c || 0;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    if (z[i].getAttribute("w3-include-html")) {
+      ++w3IncludeHTML.c;
+      a = z[i].cloneNode(false);
+      file = z[i].getAttribute("w3-include-html");
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          a.removeAttribute("w3-include-html");
+          a.innerHTML = this.responseText;
+          z[i].parentNode.replaceChild(a, z[i]);
+          --w3IncludeHTML.c;
+          w3IncludeHTML(fn);
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+  if (fn && w3IncludeHTML.c==0) fn();
+}
+
 
 $(document).ready(function() {
 
-	w3IncludeHTML()
-	//scrollTop()
-
-	// $('.spinner').css({
-	// 	height: WindowSize.height()
-	// })
-
-    setTimeout(function() {
+	//w3IncludeHTML()
+	w3IncludeHTML(function() {
 
 		heightTopBar()
 
@@ -46,6 +57,30 @@ $(document).ready(function() {
 		$('.layout').animate({
 			opacity: 1
 		}, 700)
+
+		$('.selectpicker').on('change', function (e) {
+			console.log($(this).val().length > 0)
+		  	$(this).val().length > 0 ? $(this).selectpicker('setStyle', 'btn-primary', 'add') : $(this).selectpicker('setStyle', 'btn-primary', 'remove');
+		});
+
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+		  $('.selectpicker').each(function() {
+		  	$(this).selectpicker('mobile')
+		  })		  
+		}
+
+		$('.selectpicker').each(function() {
+			$(this).selectpicker({
+				showTick: true,
+				style: 'btn-default',
+				size: 10,
+				actionsBox: true,
+				deselectAllText: 'Очистить',
+				selectAllText: 'Выбрать все',
+	    		noneSelectedText: 'Не выбрано',
+	    		countSelectedText: 'Выбрано {0}'
+			});
+		});
 
 		$('.row.catalog').owlCarousel({
 			items: 4,
@@ -112,11 +147,9 @@ $(document).ready(function() {
 		    }
 		})
 
-    }, 200)
+	})
 
 
-	//DocumentHeader.init()
-	//fetchData()
 	WindowSize.init()
 
 
@@ -124,7 +157,7 @@ $(document).ready(function() {
 		if( $(this).next().hasClass('sub') ) return false
     })
 
-	$('a.smooth-scroll').on('click', function(e) {
+	$('body').on('click', 'a.smooth-scroll', function(e) {
 	    var $anchor = $(this);
 	    $('html, body').stop().animate({
 	        scrollTop: $($anchor.attr('href')).offset().top

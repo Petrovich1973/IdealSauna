@@ -656,11 +656,8 @@ h2.name .link {
 }
 .row.catalog h3 {
 	font-size: 100%;
-	/*white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;*/
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 	height: 56px;
 	overflow: hidden;
 }
@@ -838,6 +835,246 @@ h2.name .link {
 }
 
 
+
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.multiselect-native-select .multiselect.dropdown-toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 145px;
+}
+.multiselect-native-select .multiselect-selected-text {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.multiselect-native-select .btn .caret {
+    margin-left: 10px;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: #0096ff;
+}
+
+
+.btn-default {
+	color: #000;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0096ff;
+    border-color: #0096ff;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0096ff;
+    border-color: #0096ff;
+}
+.btn-primary.active, 
+.btn-primary:active, 
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #0096ff;
+    border-color: #0096ff;
+}
+.btn-primary.active.focus, 
+.btn-primary.active:focus, 
+.btn-primary.active:hover, 
+.btn-primary:active.focus, 
+.btn-primary:active:focus, 
+.btn-primary:active:hover, 
+.open>.dropdown-toggle.btn-primary.focus, 
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #0096ff;
+    border-color: #0096ff;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li.selected a,
+.dropdown-menu>li>a:focus {
+    color: #fff;
+    background-color: rgba(0,150,255,1);
+}
+
+.dropdown-menu>li>a:hover {
+    color: #fff;
+    background-color: rgba(0,150,255,0.6) !important;
+}
+
+
+.bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*=col-] {
+	float: none;
+    margin-left: 3px;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+.filter {
+	margin: 0 -3px;
+}
+.filterRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+.filter .col {
+	margin: 6px 3px;
+	margin-left: 3px;
+}
+
+
+
+
+
+
+
+.productDetail {
+	display: flex;
+	width: 100%;
+	font-size: 90%;
+}
+.productDetail > .col {
+	width: 50%;
+}
+.productDetail .name {
+	font-size: 180%;
+}
+.productDetail .navigation {
+	padding: 23px 0;
+}
+.navigation .separator {
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: middle;
+	color: #0096ff;
+}
+.navigation a {
+	display: inline-block;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.productDetail .model {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	padding: 0 5px;
+}
+
+.model .name {
+	font-size: 130%;
+	padding: 0;
+	padding-right: 15px;
+}
+.model .selectWrap {
+	width: auto;
+	min-width: 100px;
+}
+
+
+
+
+.productFeatures {
+	display: table;
+	margin: 0;
+	padding: 0 5px;
+}
+.productFeatures > li {
+	display: table-row;
+}
+.productFeatures > li > span {
+	display: table-cell;
+	padding: 5px 0;
+	padding-right: 23px;
+	line-height: 1;
+	vertical-align: middle;
+}
+.productFeatures > li > span:first-child {
+	font-weight: 600;
+}
+
+
+
+
+.colorWrap {
+	display: block;
+	margin: 0 -3px;
+}
+.colorItem {
+	display: inline-block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 2px 3px;
+	background-color: #dadada;
+	cursor: pointer;
+}
+.colorItem.active,
+.colorItem:hover {
+	box-shadow: 0 0 0 2px #0096ff;
+}
+
+
+
+.productPrice {
+	display: block;
+	margin: 20px 0;
+}
+.productPrice .line {
+	display: block;
+	position: relative;
+}
+.productPrice .icons {
+	display: inline-block;
+	width: 1px;
+	height: 100%;
+	white-space: nowrap;
+}
+.productPrice .icons .icon {
+	display: inline-block;
+	margin: 0 5px;
+}
+.productPrice img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.productPrice .current {
+	font-size: 180%;
+    line-height: 1;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 5px;
+}
+.productPrice .old {
+    display: inline-block;
+    text-decoration: line-through;
+    color: #9a9a9a;
+    font-size: 90%;
+}
 
 
 
