@@ -13,7 +13,7 @@ body {
 }
 
 body a {
-	color: #0096ff;
+	color: #007fd8;
 }
 a:focus, a:hover {
 	color: #0096ff;
@@ -21,6 +21,10 @@ a:focus, a:hover {
 }
 hr {
 	border-color: #7b7b7b;
+}
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    outline-offset: !important;
 }
 .spinner {
 	text-align: center;
@@ -909,6 +913,21 @@ h2.name .link {
     border-color: #0096ff;
 }
 
+.filter .btn-primary,
+.model .btn-primary {
+    color: #000;
+    background-color: #e6e6e6;
+    border-color: #c4c4c4;
+}
+.filter .btn-primary:hover,
+.filter .btn-primary:focus,
+.model .btn-primary:hover,
+.model .btn-primary:focus {
+    color: #000;
+    background-color: #e6e6e6;
+    border-color: #c4c4c4;
+}
+
 .bootstrap-select.btn-group .dropdown-menu li.selected a,
 .dropdown-menu>li>a:focus {
     color: #fff;
@@ -964,12 +983,22 @@ h2.name .link {
 	width: 100%;
 }
 .filterRow.hover {
-	background-color: rgba(255,82,82,0.07);
+	/*background-color: rgba(255,82,82,0.07);*/
+	background-color: rgba(0,0,0,0.07);
 }
 .filter .col {
 	margin: 6px 3px;
 	margin-left: 3px;
 }
+
+
+
+
+
+.productDescription {
+	padding: 20px 0;
+}
+
 
 
 
@@ -989,7 +1018,7 @@ h2.name .link {
 .productDetail > .col:first-child {
     padding-right: 7%;
 }
-.productDetail .name {
+.productDetail .productName {
 	font-size: 180%;
 }
 .productDetail .navigation {
@@ -1126,16 +1155,72 @@ h2.name .link {
 #productGalleryListThumbs a img {
   display: block;
   width: 100%;
-  border: 1px solid transparent;
+  /*border: 1px solid transparent;*/
   box-sizing: border-box;
 }
+#productGalleryListThumbs a:hover img,
 #productGalleryListThumbs a.active img {
-  border: 1px solid #dedede;
+  /*border: 1px solid #dedede;*/
+  box-shadow: 0 0 0 1px #dedede;
+  position: relative;
 }
 .productGallery .imageMain {
 	display: block;
 	width: 100%;
 }
+.zoomWindowContainer * {
+    cursor: -webkit-zoom-in !important;
+}
+
+
+
+
+
+.counterChoice {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 0 15px;
+}
+.counterChoice .act {	
+	margin: 0 14px;
+	padding: 0;
+	width: 18px;
+	box-sizing: border-box;
+	color: #0096ff;
+	box-shadow: 0 0 0 2px #0096ff;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.counterChoice .act:hover {
+    transform: scale(1.1);
+}
+.counterChoice .act:active {
+    transform: scale(1);
+}
+
+.productBtnBuy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+}
+.productBtnBuy > * {
+	padding: 0 3px;
+}
+.productLinkQuickBuy {
+	display: inline-block;
+	margin: 5px 0;
+	padding: 5px 0;
+	font-weight: 400;
+}
+
+
 
 
 

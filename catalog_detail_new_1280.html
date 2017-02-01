@@ -6,20 +6,20 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>IdealSauna</title>
 
-    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=9">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=9">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=9">
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=11">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=11">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=11">
 
-    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=9">
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=11">
 
-    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=9">
+    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=11">
 
-    <link rel="stylesheet" href="lib/fonts/fonts.css?v=9">
-	<link rel="stylesheet" href="lib/css/style.css?v=9">
-	<link rel="stylesheet" href="lib/css/font-awesome.min.css?v=9">
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=11">
+	<link rel="stylesheet" href="lib/css/style.css?v=11">
+	<link rel="stylesheet" href="lib/css/font-awesome.min.css?v=11">
     
     <!-- include html -->
-    <script src="lib/w3data/w3data.js?v=9"></script>
+    <script src="lib/w3data/w3data.js?v=11"></script>
 
 </head>
 <body>
@@ -93,32 +93,20 @@
 
                                 <select 
                                 class="col selectpicker"
-                                title="Сортировка"
-                                multiple data-actions-box="true" 
-                                data-selected-text-format="count > 1"> 
-                                    <option value="cheese">Cheese</option>
-                                    <option value="tomatoes">Tomatoes</option>
-                                    <option value="mozarella">Mozzarella Onions Onions</option>
-                                    <option value="mushrooms">Mushrooms</option>
-                                    <option value="pepperoni">Pepperoni</option>
-                                    <option value="onions">Onions</option>
-                                    <option value="tomatoes">Tomatoes</option>
-                                    <option value="mozarella">Mozzarella Onions Onions</option>
-                                    <option value="mushrooms">Mushrooms</option>
-                                    <option value="pepperoni">Pepperoni</option>
+                                title="Сортировка"> 
+                                    <option value="cheese" selected>по популярности</option>
+                                    <option value="cheese">от А до Я</option>
+                                    <option value="tomatoes">от Я до А</option>
+                                    <option value="mozarella">по цене</option>
                                 </select>         
 
                                 <select 
                                 class="col selectpicker"
-                                title="Показать по"
-                                multiple data-actions-box="true" 
-                                data-selected-text-format="count > 1">
-                                    <option value="cheese">Cheese</option>
-                                    <option value="tomatoes">Tomatoes</option>
-                                    <option value="mozarella">Mozzarella Onions Onions</option>
-                                    <option value="mushrooms">Mushrooms</option>
-                                    <option value="pepperoni">Pepperoni</option>
-                                    <option value="onions">Onions</option>
+                                title="Показать по">
+                                    <option value="cheese" selected>по 8</option>
+                                    <option value="tomatoes">по 16</option>
+                                    <option value="mozarella">по 32</option>
+                                    <option value="mushrooms">по 64</option>
                                 </select>  
 
                                 <div class="btn-group bootstrap-select col filterRefresh" title="Очисить фильтр">
@@ -130,7 +118,7 @@
 
                         <div class="productDetail">
                             <div class="col">
-                                <h1 class="name">Печь дровяная Harvia Legend 150</h1>
+                                <h1 class="productName">Печь дровяная Harvia Legend 150</h1>
                                 <div class="productGallery">
 
                                     <div>
@@ -172,7 +160,7 @@
                                           <img id="productGalleryImage" src="assets/img/product/04_thumb.jpg" />
                                         </a>
 
-                                        <a 
+                                        <!-- <a 
                                         href="#" 
                                         data-image="assets/img/product/03_small.jpg" 
                                         data-zoom-image="assets/img/product/03_big.jpg">
@@ -184,7 +172,7 @@
                                         data-image="assets/img/product/04_small.jpg" 
                                         data-zoom-image="assets/img/product/04_big.jpg">
                                           <img id="productGalleryImage" src="assets/img/product/04_thumb.jpg" />
-                                        </a>
+                                        </a> -->
 
                                     </div>
 
@@ -271,12 +259,17 @@
                                     </li>
                                     <li>
                                         <span>
-                                            <span class="counter">
-                                                <span class="name"></span>
-                                                <span class="decrement"></span>
+                                            <span class="counterChoice">
+                                                <span class="name">Кол-во:</span>
+                                                <span class="act decrement"><i class="fa fa-minus"></i></span>
                                                 <span class="count">1</span>
-                                                <span class="increment"></span>
+                                                <span class="act increment"><i class="fa fa-plus"></i></span>
                                             </span>
+                                            <a href="#" class="btn btn-primary productBtnBuy" role="button">
+                                                <img src="lib/img/icon-24-shopping_basket.png" alt="">
+                                                <span>Купить</span>
+                                            </a>
+                                            <a href="#" class="productLinkQuickBuy">Купить в один клик</a>
                                         </span>
                                         <span></span>
                                     </li>
@@ -286,6 +279,31 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        
+                        <div class="productDescription">
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#panel1">ОПИСАНИЕ</a></li>
+                                <li><a data-toggle="tab" href="#panel2">Панель 2</a></li>
+                                <li><a data-toggle="tab" href="#panel3">Другие панели</a></li>
+                            </ul>
+     
+                            <div class="tab-content">
+                                <div id="panel1" class="tab-pane fade in active">
+                                    <h3>ОПИСАНИЕ</h3>
+                                    <p>Содержимое 1 панели...</p>
+                                </div>
+                                <div id="panel2" class="tab-pane fade">
+                                    <h3>Панель 2</h3>
+                                    <p>Содержимое 2 панели...</p>
+                                </div>
+                                <div id="panel3" class="tab-pane fade">
+                                    <h3>Панель 3</h3>
+                                    <p>Содержимое 3 панели...</p>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -302,18 +320,18 @@
 
     </div>
 
-    <script src="lib/jquery/jquery-3.1.1.min.js?v=9"></script>
-    <script src="lib/bootstrap3/js/bootstrap.min.js?v=9"></script>
-    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=9"></script>
+    <script src="lib/jquery/jquery-3.1.1.min.js?v=11"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js?v=11"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=11"></script>
 
-    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=9"></script>
-    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=9"></script>
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=11"></script>
+    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=11"></script>
 
-    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=9"></script>
-    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=9"></script>
+    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=11"></script>
+    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=11"></script>
 
     
-    <script src="dist/bundle.js?v=9"></script>
+    <script src="dist/bundle.js?v=11"></script>
 
 </body>
 </html>
