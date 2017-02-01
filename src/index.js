@@ -59,9 +59,10 @@ $(document).ready(function() {
 		}, 700)
 
 		$('.selectpicker').on('change', function (e) {
-			console.log($(this).val().length > 0)
-		  	$(this).val().length > 0 ? $(this).selectpicker('setStyle', 'btn-primary', 'add') : $(this).selectpicker('setStyle', 'btn-primary', 'remove');
-		});
+		  	$(this).val().length > 0 ? 
+		  	$(this).selectpicker('setStyle', 'btn-primary', 'add') : 
+		  	$(this).selectpicker('setStyle', 'btn-primary', 'remove');
+		})
 
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		  $('.selectpicker').each(function() {
@@ -80,7 +81,8 @@ $(document).ready(function() {
 	    		noneSelectedText: 'Не выбрано',
 	    		countSelectedText: 'Выбрано {0}'
 			});
-		});
+		})
+		.trigger('change')
 
 		if( $("#productGalleryImage") ) {
 
@@ -98,6 +100,17 @@ $(document).ready(function() {
 	            $.fancybox( ez.getGalleryList() );
 	            return false;
 	        })
+
+		    $(window).resize(function(e){
+		        $('.zoomContainer').remove();
+		        $("#productGalleryImage").elevateZoom({
+		            zoomType: 'inner', 
+		            containLensZoom: true, 
+		            gallery: 'productGalleryListThumbs',
+		            cursor: 'pointer', 
+		            galleryActiveClass: 'active'
+		        });
+		    }); 
         
         }
 
@@ -182,6 +195,14 @@ $(document).ready(function() {
 	        scrollTop: $($anchor.attr('href')).offset().top
 	    }, 500);
 	    e.preventDefault();
+	})
+
+	$('.filterRefresh')
+	.hover(function(){
+		$('.filterRow').addClass('hover')
+	},
+	function(){
+		$('.filterRow').removeClass('hover')
 	})
 
 	console.debug('document.ready')

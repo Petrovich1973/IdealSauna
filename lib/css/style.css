@@ -882,7 +882,8 @@ h2.name .link {
     background-color: #0096ff;
     border-color: #0096ff;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
     color: #fff;
     background-color: #0096ff;
     border-color: #0096ff;
@@ -929,16 +930,41 @@ h2.name .link {
 	width: 100%;
 	max-width: 100%;
 }
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    width: auto;
+    max-width: 94px;
+    text-overflow: ellipsis;
+}
+
+.filter .filterRefresh {
+	text-align: right;
+	white-space: nowrap;
+	cursor: pointer;
+	padding-right: 5px;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.filter .filterRefresh * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.filter .filterRefresh .name {
+	margin-right: 10px;
+}
+
 
 
 .filter {
-	margin: 0 -3px;
+	margin: 0 -13px 0 -3px;
 }
 .filterRow {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	width: 100%;
+}
+.filterRow.hover {
+	background-color: rgba(255,82,82,0.07);
 }
 .filter .col {
 	margin: 6px 3px;
@@ -957,7 +983,11 @@ h2.name .link {
 	font-size: 90%;
 }
 .productDetail > .col {
-	width: 50%;
+    width: 50%;
+    box-sizing: border-box;
+}
+.productDetail > .col:first-child {
+    padding-right: 7%;
 }
 .productDetail .name {
 	font-size: 180%;
@@ -1081,7 +1111,7 @@ h2.name .link {
 
 
 .productGallery {
-  width: 360px;
+  width: auto;
 }
 
 #productGalleryListThumbs {
@@ -1091,7 +1121,7 @@ h2.name .link {
 #productGalleryListThumbs a {
   display: block;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 5px 0;
 }
 #productGalleryListThumbs a img {
   display: block;
@@ -1100,9 +1130,12 @@ h2.name .link {
   box-sizing: border-box;
 }
 #productGalleryListThumbs a.active img {
-  border: 1px solid #000;
+  border: 1px solid #dedede;
 }
-
+.productGallery .imageMain {
+	display: block;
+	width: 100%;
+}
 
 
 
@@ -1113,6 +1146,9 @@ h2.name .link {
 	}	
 	.row.catalog .thumbnail a > span {
 		display: none;
+	}
+	.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	    max-width: 77px;
 	}
 }
 
@@ -1155,6 +1191,9 @@ h2.name .link {
 @media (max-width: 768px) {
 	.buildPhone {
 		display: none;
+	}
+	.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	    max-width: 77px;
 	}
 }
 

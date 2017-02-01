@@ -50,6 +50,7 @@
                             <div class="filterRow">
                                 <select 
                                 class="col selectpicker"
+                                title="Бренд"
                                 multiple data-actions-box="true" 
                                 data-selected-text-format="count > 1"> 
                                     <option value="cheese">Cheese</option>
@@ -62,6 +63,7 @@
 
                                 <select 
                                 class="col selectpicker"
+                                title="Тип"
                                 multiple data-actions-box="true" 
                                 data-selected-text-format="count > 1"> 
                                     <option value="cheese">Cheese</option>
@@ -78,6 +80,7 @@
 
                                 <select 
                                 class="col selectpicker"
+                                title="Объём парной"
                                 multiple data-actions-box="true" 
                                 data-selected-text-format="count > 1"> 
                                     <option value="cheese">Cheese</option>
@@ -90,6 +93,7 @@
 
                                 <select 
                                 class="col selectpicker"
+                                title="Сортировка"
                                 multiple data-actions-box="true" 
                                 data-selected-text-format="count > 1"> 
                                     <option value="cheese">Cheese</option>
@@ -106,6 +110,7 @@
 
                                 <select 
                                 class="col selectpicker"
+                                title="Показать по"
                                 multiple data-actions-box="true" 
                                 data-selected-text-format="count > 1">
                                     <option value="cheese">Cheese</option>
@@ -114,25 +119,12 @@
                                     <option value="mushrooms">Mushrooms</option>
                                     <option value="pepperoni">Pepperoni</option>
                                     <option value="onions">Onions</option>
-                                </select>   
+                                </select>  
 
-                                <select 
-                                class="col selectpicker"
-                                multiple data-actions-box="true" 
-                                data-selected-text-format="count > 1">
-                                    <option value="cheese">Cheese</option>
-                                    <option value="tomatoes">Tomatoes</option>
-                                    <option value="mozarella">Mozzarella Onions Onions</option>
-                                    <option value="mushrooms">Mushrooms</option>
-                                    <option value="pepperoni">Pepperoni</option>
-                                    <option value="onions">Onions</option>
-                                    <option value="cheese">Cheese</option>
-                                    <option value="tomatoes">Tomatoes</option>
-                                    <option value="mozarella">Mozzarella Onions Onions</option>
-                                    <option value="mushrooms">Mushrooms</option>
-                                    <option value="pepperoni">Pepperoni</option>
-                                    <option value="onions">Onions</option>
-                                </select>
+                                <div class="btn-group bootstrap-select col filterRefresh" title="Очисить фильтр">
+                                    <span class="name">Сбросить</span><i class="fa fa-close"></i>
+                                </div>     
+
                             </div>
                         </div>                      
 
@@ -144,6 +136,7 @@
                                     <div>
                                         <img 
                                         id="productGalleryImage" 
+                                        class="imageMain" 
                                         src="assets/img/product/01_small.jpg" 
                                         data-zoom-image="assets/img/product/01_big.jpg" />
                                     </div>
