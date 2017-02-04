@@ -17,6 +17,44 @@ var heightTopBar = function() {
 	WindowSize.width() < 992 ? margin = '88px' : margin = '44px';
 }
 
+var formQuickBuy = '<form>'+
+		'<p><strong>Введите имя и телефон для того, чтобы<br>наш менеджер связался с вами.</strong></p>'+
+		'<div class="line flex">'+
+			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя"></div>'+
+			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона"></div>'+
+		'</div>'+
+		'<div class="row">'+
+			'<div class="col-xs-12"><textarea class="form-control" rows="3" placeholder="Комментарий"></textarea></div>'+
+		'</div>'+
+		'<div class="instruction"><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i> — поля, обязательные для заполнения</div>'+
+	'</form>'
+
+var formQuickBuyBtn = '<a href="#" class="btn btn-primary productBtnBuy" role="button">'+
+        '<img src="lib/img/icon-24-shopping_basket.png" alt="">'+
+        '<span>Оформить заказ</span>'+
+    '</a>'
+
+var quickBuy = function(e) {
+	e.preventDefault()
+	$('.windowProductDetailQuickBuy').addClass('open')
+	$('.windowProductDetailQuickBuy .productDetailWrap').append( '<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>' )
+	$('.windowProductDetailQuickBuy .productDetailWrap').append( '<div class="productDetail"></div>' )
+	$('.windowProductDetailQuickBuy .productDetail').append( '<div class="colLeft"></div>' )
+	$('.windowProductDetailQuickBuy .productDetail').append( '<div class="colRight"></div>' )
+	$('.windowProductDetailQuickBuy .colLeft').append( $('.imageMain').clone() )
+	$('.windowProductDetailQuickBuy .colRight').append( $('.productName').clone() )
+	$('.windowProductDetailQuickBuy .colRight').append( $('.productPrice').clone() )
+	$('.windowProductDetailQuickBuy .colRight').append( formQuickBuy )
+	$('.windowProductDetailQuickBuy .colRight').append( '<div class="lineAction flex"></div>' )
+	$('.windowProductDetailQuickBuy .lineAction').append( $('.counterChoice').clone() )
+	$('.windowProductDetailQuickBuy .lineAction').append( formQuickBuyBtn )
+	$('.windowProductDetailQuickBuy button.close, .overlay').click(function(){
+		$('.windowProductDetailQuickBuy').removeClass('open')
+		$('.productDetailWrap').empty()
+	})
+	return false
+}
+
 function w3IncludeHTML(fn) {
   var z, i, a, file, xhttp;
   w3IncludeHTML.c = w3IncludeHTML.c || 0;
@@ -179,6 +217,18 @@ $(document).ready(function() {
 		    }
 		})
 
+		$('.filterRefresh')
+		.hover(function(){
+			$('.filterRow').addClass('hover')
+		},
+		function(){
+			$('.filterRow').removeClass('hover')
+		})
+
+		$('.productLinkQuickBuy').on('click', function(e){
+			quickBuy(e)
+		})
+
 	})
 
 
@@ -195,14 +245,6 @@ $(document).ready(function() {
 	        scrollTop: $($anchor.attr('href')).offset().top
 	    }, 500);
 	    e.preventDefault();
-	})
-
-	$('.filterRefresh')
-	.hover(function(){
-		$('.filterRow').addClass('hover')
-	},
-	function(){
-		$('.filterRow').removeClass('hover')
 	})
 
 	console.debug('document.ready')

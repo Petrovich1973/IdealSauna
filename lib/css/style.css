@@ -975,7 +975,7 @@ h2.name .link {
 	text-align: right;
 	white-space: nowrap;
 	cursor: pointer;
-	padding-right: 5px;
+	padding-right: 10px;
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -1200,7 +1200,7 @@ h2.name .link {
   box-shadow: 0 0 0 1px #dedede;
   position: relative;
 }
-.productGallery .imageMain {
+.imageMain {
 	display: block;
 	width: 100%;
 }
@@ -1299,9 +1299,74 @@ h2.name .link {
 
 
 
+.overlay {
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.2);
+}
 
-
-
+.windowProductDetailQuickBuy {
+	position: relative;
+	height: 0;
+	display: none;
+}
+.windowProductDetailQuickBuy.open {
+	display: block;
+}
+.windowProductDetailQuickBuy .productDetailWrap {
+	position: relative;
+	z-index: 3;
+	background-color: #fff;
+}
+.windowProductDetailQuickBuy .productDetail {
+	padding: 20px 0;
+}
+.windowProductDetailQuickBuy .colLeft,
+.windowProductDetailQuickBuy .colRight {
+	width: 50%;
+}
+.windowProductDetailQuickBuy .colRight {
+	padding-right: 7%;
+	padding-left: 5px;
+}
+.windowProductDetailQuickBuy .line {
+	margin-bottom: 10px;
+}
+.windowProductDetailQuickBuy .line .widthL {
+	flex: 1 35%;
+}
+.windowProductDetailQuickBuy .line .widthR {
+	flex: 1 65%;
+	padding-left: 5%;
+}
+.windowProductDetailQuickBuy .instruction {
+	margin-bottom: 20px;
+}
+.windowProductDetailQuickBuy .lineAction {
+	align-items: center;
+}
+.windowProductDetailQuickBuy .counterChoice,
+.windowProductDetailQuickBuy .productBtnBuy {
+	width: 50%;
+	margin: 0;
+}
+.windowProductDetailQuickBuy button.close {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	opacity: .7;
+}
+.windowProductDetailQuickBuy button.close:focus,
+.windowProductDetailQuickBuy button.close:hover {
+	opacity: 1;
+}
+.windowProductDetailQuickBuy .fa-snowflake-o {
+	font-size: 60%;
+}
 
 
 
@@ -1388,6 +1453,9 @@ h2.name .link {
 	.navigation a span {
 		display: none;
 	}
+	.productDescription ul li a {
+	    font-size: 87%;
+	}
 }
 
 @media all and (max-width: 575px) {
@@ -1445,7 +1513,6 @@ h2.name .link {
 	}
 	.social-links {
 	    display: flex;
-	    justify-content: center;
 	}
 	.nav_group_label {
 	    margin-bottom: 8px;
