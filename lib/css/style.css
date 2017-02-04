@@ -1338,10 +1338,19 @@ h2.name .link {
 }
 .windowProductDetailQuickBuy .line .widthL {
 	flex: 1 35%;
+	position: relative;
 }
 .windowProductDetailQuickBuy .line .widthR {
 	flex: 1 65%;
+	position: relative;
 	padding-left: 5%;
+}
+.windowProductDetailQuickBuy .line .widthL .fa-snowflake-o,
+.windowProductDetailQuickBuy .line .widthR .fa-snowflake-o {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	margin-left: 3px;
 }
 .windowProductDetailQuickBuy .instruction {
 	margin-bottom: 20px;
@@ -1365,7 +1374,7 @@ h2.name .link {
 	opacity: 1;
 }
 .windowProductDetailQuickBuy .fa-snowflake-o {
-	font-size: 60%;
+	font-size: 50%;
 }
 
 

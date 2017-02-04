@@ -17,11 +17,11 @@ var heightTopBar = function() {
 	WindowSize.width() < 992 ? margin = '88px' : margin = '44px';
 }
 
-var formQuickBuy = '<form>'+
+var formQuickBuy = '<form role="form" data-toggle="validator" id="windowProductDetailQuickBuy">'+
 		'<p><strong>Введите имя и телефон для того, чтобы<br>наш менеджер связался с вами.</strong></p>'+
 		'<div class="line flex">'+
-			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя"></div>'+
-			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона"></div>'+
+			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя" required><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i></div>'+
+			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона" required><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i></div>'+
 		'</div>'+
 		'<div class="row">'+
 			'<div class="col-xs-12"><textarea class="form-control" rows="3" placeholder="Комментарий"></textarea></div>'+
@@ -52,6 +52,7 @@ var quickBuy = function(e) {
 		$('.windowProductDetailQuickBuy').removeClass('open')
 		$('.productDetailWrap').empty()
 	})
+	//$('#windowProductDetailQuickBuy').validator()
 	return false
 }
 
