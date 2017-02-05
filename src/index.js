@@ -30,7 +30,7 @@ var formQuickBuy = '<form role="form" data-toggle="validator" id="windowProductD
 	'</form>'
 
 var formQuickBuyBtn = '<a href="#" class="btn btn-primary productBtnBuy" role="button">'+
-        '<img src="lib/img/icon-24-shopping_basket.png" alt="">'+
+        //'<img src="lib/img/icon-24-shopping_basket.png" alt="">'+
         '<span>Оформить заказ</span>'+
     '</a>'
 
@@ -123,7 +123,7 @@ $(document).ready(function() {
 		})
 		.trigger('change')
 
-		if( $("#productGalleryImage") ) {
+		if( $("#productGalleryImage").length ) {
 
 	        $("#productGalleryImage").elevateZoom({
 	            zoomType: 'inner', 
@@ -148,12 +148,24 @@ $(document).ready(function() {
 		            gallery: 'productGalleryListThumbs',
 		            cursor: 'pointer', 
 		            galleryActiveClass: 'active'
-		        });
-		    }); 
+		        })
+		    })
         
         }
 
-		$('.row.catalog').owlCarousel({
+		if( $(".pagination").length ) {
+
+		    $('.pagination').pagination({
+		        items: 1000,
+		        itemsOnPage: 10,
+		        cssStyle: 'light-theme',
+		        prevText: 'назад',
+		        nextText: 'вперед'
+		    })
+        
+        }
+
+		$('.row.catalog.owl-carousel').owlCarousel({
 			items: 4,
 			loop: true,
 			nav: true,
