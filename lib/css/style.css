@@ -715,6 +715,7 @@ h2.name .link {
 .row.catalog .thumbnail > img + .caption > h3 {
 	height: 35px;
 	text-align: center;
+	word-wrap: break-word;
 }
 .row.catalog .manufacturerCountry {
 	font-size: 90%;
