@@ -231,11 +231,19 @@ $(document).ready(function() {
 		})
 
 		$('.filterRefresh')
-		.hover(function(){
-			$('.filterRow').addClass('hover')
-		},
-		function(){
-			$('.filterRow').removeClass('hover')
+			.hover(function(){
+				$('.filterRow').addClass('hover')
+			},
+			function(){
+				$('.filterRow').removeClass('hover')
+		})
+
+		$('.remove')
+			.hover(function(){
+				$(this).parents('tbody').addClass('hover')
+			},
+			function(){
+				$(this).parents('tbody').removeClass('hover')
 		})
 
 		$('.productLinkQuickBuy').on('click', function(e){

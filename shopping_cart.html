@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>IdealSauna</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=13">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=13">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=13">
+
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=13">
+
+    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=13">
+
+    <link type="text/css" rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=13"/>
+
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=13">
+    <link rel="stylesheet" href="lib/css/style.css?v=13">
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=13">
+    
+    <!-- include html -->
+    <script src="lib/w3data/w3data.js?v=13"></script>
+
+</head>
+<body>
+
+	<!-- <h1 class="spinner">Загрузка...</h1> -->
+
+    <div class="developmentInfo temp" style="position: fixed;bottom: 0;right: 0; z-index: 10;"></div>
+
+    <div class="layout" id="top"> <!-- scroll to #top -->
+    
+        <div class="header" w3-include-html="components/header.html"></div>
+
+        <div class="topBar" w3-include-html="components/topBar.html"></div>
+
+        <div class="mainBox">
+
+            <div class="container">
+
+                <div class="row normalizeHeight">
+
+                    <div class="content">
+
+                        <h1 class="categoryName">Корзина</h1>
+                        
+                        <div class="shopingList" w3-include-html="modules/shopingList.html"></div>
+
+                        <h2>С этим товаром покупают</h2>
+
+                        <div class="row catalog owl-carousel" w3-include-html="modules/owl-catalog.html"></div>
+
+                        <h2 class="callToAction align-center">
+                            <span>Остались вопросы? — Звоните:</span>
+                            <span class="colorff8338"><nobr>+7 (495) 215-05-46</nobr></span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer_nav" w3-include-html="components/footer_nav.html"></div>
+
+        <div class="footer_copyright" w3-include-html="components/footer_copyright.html"></div>
+
+    </div>
+
+    <script src="lib/jquery/jquery-3.1.1.min.js?v=13"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js?v=13"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=13"></script>
+
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=13"></script>
+    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=13"></script>
+
+    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=13"></script>
+    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=13"></script>
+
+    <script src="lib/simplePagination/jquery.simplePagination.js?v=13"></script>
+    
+    <script src="dist/bundle.js?v=13"></script>
+
+</body>
+</html>
