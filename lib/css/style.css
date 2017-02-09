@@ -56,7 +56,9 @@ hr {
     background-color: #e9e9e9;
     border-color: #e9e9e9;
 }
-
+.btn img {
+	padding: 0;
+}
 
 .table .table {
 	background-color: transparent;
@@ -93,7 +95,8 @@ hr {
 .layout {
 	opacity: 0;
 	overflow: hidden;
-	background:#ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAACVBMVEUAAAD8/vz8+vw8AUo1AAAAAXRSTlMAQObYZgAAAWhJREFUKJEVkUEORTEERW2SROck7IfEm5O0q/x+O+iE6ziFy4aGaSlH4J7B25wjdAFbBansEl+Qdmqa+RIPXKNjH80z+QBxTrOnZCS8MFYmbPSCisKrXYVOICVRk5nSDe8w4mYTvwCOfbjxk3QwfpTI5pgChU+VItCDwRUp8mkwFjD51PCITEEKod6hQhQILsXeiOdLrYtAVNGxZbYLoM5jZ/i85bHS6PdBcizdEeSd86W5yLKQJWjtXTZxN0A+ZnLzeXxLvRwstHAHSuYMf7ltDGe25bv98CUQ/WVWnEQE8XicFnt2BWaj+VhxHnCZsze1hq0qvn0X7dwPDkro2lbMBsZPOXHVqwNPsNuothVs9xZS7jwBu77mObtl9V75uzV5eUF3ZXTla3PgfUHCf20YcPqb5s1q5tWLYdTv2s7xwcgNt9MEZWNCEqsXgbPu/g6fFIYWDKLvTteFUslrSFhrlN3XEl051D8DjBGDQYt+IQAAAABJRU5ErkJggg==);
+	background: #fff;
+	/*background:#ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAACVBMVEUAAAD8/vz8+vw8AUo1AAAAAXRSTlMAQObYZgAAAWhJREFUKJEVkUEORTEERW2SROck7IfEm5O0q/x+O+iE6ziFy4aGaSlH4J7B25wjdAFbBansEl+Qdmqa+RIPXKNjH80z+QBxTrOnZCS8MFYmbPSCisKrXYVOICVRk5nSDe8w4mYTvwCOfbjxk3QwfpTI5pgChU+VItCDwRUp8mkwFjD51PCITEEKod6hQhQILsXeiOdLrYtAVNGxZbYLoM5jZ/i85bHS6PdBcizdEeSd86W5yLKQJWjtXTZxN0A+ZnLzeXxLvRwstHAHSuYMf7ltDGe25bv98CUQ/WVWnEQE8XicFnt2BWaj+VhxHnCZsze1hq0qvn0X7dwPDkro2lbMBsZPOXHVqwNPsNuothVs9xZS7jwBu77mObtl9V75uzV5eUF3ZXTla3PgfUHCf20YcPqb5s1q5tWLYdTv2s7xwcgNt9MEZWNCEqsXgbPu/g6fFIYWDKLvTteFUslrSFhrlN3XEl051D8DjBGDQYt+IQAAAABJRU5ErkJggg==);*/
 }
 
 .widthFull {
@@ -105,6 +108,12 @@ hr {
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
+	box-shadow: none;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .text-center {
@@ -537,7 +546,7 @@ hr {
 	background-color: rgba(183,183,183,0.3);
 	margin-left: -5px;
 	padding-left: 5px;
-	margin-right: -5px;
+	margin-right: 0;
 	padding-right: 5px;
 }
 .bar .menu li.selected > a {
@@ -545,7 +554,6 @@ hr {
 }
 .bar hr {
     display: block;
-    max-width: 230px;
     margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 0;
@@ -683,6 +691,11 @@ h2.name .link {
 	border: 1px solid transparent;
 	padding-top: 13px;
 }
+.row.catalog .thumbnail {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
 .row.catalog .thumbnail:hover {
 	border: 1px solid #ddd;
 }
@@ -695,6 +708,7 @@ h2.name .link {
 	display: inline-block;
 	vertical-align: middle;
 	width: auto;
+	height: 24px;
 }
 .row.catalog .thumbnail a > span {
 	display: inline-block;
@@ -717,6 +731,9 @@ h2.name .link {
 	text-align: center;
 	word-wrap: break-word;
 }
+.row.catalog .thumbnail:hover > img + .caption > h3 {
+	color: #0096ff;
+}    
 .row.catalog .manufacturerCountry {
 	font-size: 90%;
 	color: #989898;
@@ -968,7 +985,7 @@ h2.name .link {
 .filter .btn-primary,
 .model .btn-primary {
     color: #000;
-    background-color: #e6e6e6;
+    background-color: #f7f7f7;
     border-color: #c4c4c4;
 }
 .filter .btn-primary:hover,
@@ -1246,7 +1263,7 @@ h2.name .link {
 }
 .imageMain {
 	display: block;
-	width: 100%;
+	width: 97%;
 }
 .zoomWindowContainer * {
     cursor: -webkit-zoom-in !important;
@@ -1277,12 +1294,12 @@ h2.name .link {
 }
 .counterChoice .act .fa {
 	display: block;
-	padding: 0 0 0 1px;
-	width: 18px;
+	padding: 0;
 	box-sizing: border-box;
 	box-shadow: 0 0 0 2px #0096ff;
 	line-height: 18px;
-	height: 18px;
+	width: 17px;
+	height: 17px;
 	text-align: center;
 	border-radius: 100%;
 }
@@ -1335,7 +1352,7 @@ h2.name .link {
 
 
 .callToAction {
-	margin: 50px 0;
+	margin: 70px 0;
 }
 .colorff8338 {
 	color: #ff8338;
@@ -1380,6 +1397,12 @@ h2.name .link {
 .windowProductDetailQuickBuy .line {
 	margin-bottom: 10px;
 }
+.windowProductDetailQuickBuy .productPrice .line:first-child {
+	margin-bottom: 0;
+}
+.windowProductDetailQuickBuy .productPrice .line:last-child {
+	margin-bottom: 15px;
+}
 .windowProductDetailQuickBuy .line .widthL {
 	flex: 1 35%;
 	position: relative;
@@ -1418,7 +1441,8 @@ h2.name .link {
 	opacity: 1;
 }
 .windowProductDetailQuickBuy .fa-snowflake-o {
-	font-size: 50%;
+	font-size: 54%;
+	vertical-align: middle;
 }
 
 
@@ -1605,9 +1629,6 @@ h2.name .link {
 	}
 	.breadcrumb {
 		display: none;
-	}
-	.counterChoice .act .fa {
-		padding: 1px 0 0 1px;
 	}
 	.productFeatures > li > span {
     	display: block;

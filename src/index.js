@@ -23,8 +23,8 @@ var formQuickBuy = '<form role="form" data-toggle="validator" id="windowProductD
 			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя" required><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i></div>'+
 			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона" required><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i></div>'+
 		'</div>'+
-		'<div class="row">'+
-			'<div class="col-xs-12"><textarea class="form-control" rows="3" placeholder="Комментарий"></textarea></div>'+
+		'<div class="line">'+
+			'<textarea class="form-control" rows="3" placeholder="Комментарий"></textarea>'+
 		'</div>'+
 		'<div class="instruction"><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i> — поля, обязательные для заполнения</div>'+
 	'</form>'
@@ -238,13 +238,13 @@ $(document).ready(function() {
 				$('.filterRow').removeClass('hover')
 		})
 
-		$('.remove')
-			.hover(function(){
-				$(this).parents('tbody').addClass('hover')
-			},
-			function(){
-				$(this).parents('tbody').removeClass('hover')
-		})
+		// $('.remove')
+		// 	.hover(function(){
+		// 		$(this).parents('tbody').addClass('hover')
+		// 	},
+		// 	function(){
+		// 		$(this).parents('tbody').removeClass('hover')
+		// })
 
 		$('.productLinkQuickBuy').on('click', function(e){
 			quickBuy(e)
