@@ -20,13 +20,13 @@ var heightTopBar = function() {
 var formQuickBuy = '<form role="form" data-toggle="validator" id="windowProductDetailQuickBuy">'+
 		'<p><strong>Введите имя и телефон для того, чтобы<br>наш менеджер связался с вами.</strong></p>'+
 		'<div class="line flex">'+
-			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя" required><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i></div>'+
-			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона" required><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i></div>'+
+			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя" required><span class=" star colorff8338">&#9733;</span></div>'+
+			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона" required><span class=" star colorff8338">&#9733;</span></div>'+
 		'</div>'+
 		'<div class="line">'+
 			'<textarea class="form-control" rows="3" placeholder="Комментарий"></textarea>'+
 		'</div>'+
-		'<div class="instruction"><i class="fa fa-snowflake-o colorff8338" aria-hidden="true"></i> — поля, обязательные для заполнения</div>'+
+		'<div class="instruction"><span class="colorff8338">&#9733;</span> — поля, обязательные для заполнения</div>'+
 	'</form>'
 
 var formQuickBuyBtn = '<a href="#" class="btn btn-primary productBtnBuy" role="button">'+
