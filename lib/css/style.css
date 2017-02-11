@@ -584,7 +584,7 @@ textarea.form-control {
 
 
 .footer_copyright {
-	background-color: #ececec;
+	background-color: rgba(0,0,0,0.02);
 	padding: 23px 0;
 	font-size: 90%;
 }
@@ -1321,6 +1321,7 @@ h2.name .link {
 .counterChoice input {
 	width: 27px;
 	text-align: center;
+    border: 1px solid #ccc;
 }
 
 .productBtnBuy {
@@ -1352,11 +1353,15 @@ h2.name .link {
 }
 .productFavorite .icon,
 .productCompare .icon {
-	width: 25px;
+	width: 24px;
+	text-align: center;
 }
-
+.productFavorite > span:last-child,
+.productCompare > span:last-child {
+    padding-left: 8px;
+}
 .productDetail .social-links {
-	margin: 23px 0;
+	margin: 28px 0;
 }
 .productDetail .nav_group_list a img {
 	width: 24px;
@@ -1429,7 +1434,8 @@ h2.name .link {
 	position: absolute;
 	left: 100%;
 	top: 0;
-	margin-left: 3px;
+	margin-left: 2px;
+	margin-top: -3px;
 	line-height: 1;
 }
 .windowProductDetailQuickBuy .instruction {
@@ -1502,6 +1508,10 @@ h2.name .link {
 }
 .shopingTable tbody tr td:last-child {
 	padding-right: 0;
+}
+.shopingTable .productName {
+	display: block;
+	line-height: 1;
 }
 .shopingTable .price {
 	display: block;
@@ -1732,7 +1742,7 @@ h2.name .link {
 	.nav_group_label {
 	    margin-bottom: 8px;
 	}
-	.footer_nav .nav .nav_group:nth-child(n+3) .nav_group_label {
+	.footer_nav .nav .nav_group:nth-child(n+3) {
 		text-align: center;
 	}
 	.user {
@@ -1773,6 +1783,25 @@ h2.name .link {
 	.windowProductDetailQuickBuy .colLeft,
 	.windowProductDetailQuickBuy .colRight {
 		width: auto;
+	}
+	.windowProductDetailQuickBuy .colRight {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.windowProductDetailQuickBuy .counterChoice {
+		width: 60%;
+		font-size: 86%;
+	}
+	.windowProductDetailQuickBuy .productBtnBuy {
+		width: 40%;
+		font-size: 86%;
+	}
+	.productFavorite > span:last-child,
+	.productCompare > span:last-child {
+	    display: none;
+	}
+	.productDetail .social-links {
+		margin: 27px 0;
 	}
 	.filter {
 		display: none;

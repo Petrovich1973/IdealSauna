@@ -99,7 +99,21 @@
     <script src="dist/bundle.js?v=16"></script>
     
     <script>
-        setTimeout(function(){ $('.productLinkQuickBuy').trigger('click') }, 1400)
+        $(window).on('load', function() {
+            $('.productDetail').css({
+                opacity: 0
+            });
+            setTimeout(function() { 
+                $('.productLinkQuickBuy')
+                .trigger('click')
+                $('.productDetail').each(function() {
+                    $(this).animate({
+                        opacity: 1
+                    }, 400)
+                })
+            }, 1400);
+            console.log('window.load')
+        })        
     </script>    
 
 </body>
