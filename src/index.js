@@ -158,6 +158,8 @@ $(document).ready(function() {
 		    $('.pagination').pagination({
 		        items: 1000,
 		        itemsOnPage: 10,
+		        displayedPages: 3,
+		        edges: 1,
 		        cssStyle: 'light-theme',
 		        prevText: 'назад',
 		        nextText: 'вперед'
