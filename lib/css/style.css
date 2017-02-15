@@ -1320,7 +1320,7 @@ h2.name .link {
     transform: scale(1);
 }
 .counterChoice input {
-	width: 27px;
+	width: 43px;
 	text-align: center;
     border: 1px solid #ccc;
 }
@@ -1331,7 +1331,7 @@ h2.name .link {
 	align-items: center;
 	font-size: 18px;
 	text-align: center;
-	padding: 10px;
+	padding: 5px 4px;
 }
 .productBtnBuy > * {
 	padding: 0 3px;
@@ -1440,15 +1440,18 @@ h2.name .link {
 	line-height: 1;
 }
 .windowProductDetailQuickBuy .instruction {
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 .windowProductDetailQuickBuy .lineAction {
 	align-items: center;
+	justify-content: space-between;
 }
-.windowProductDetailQuickBuy .counterChoice,
+.windowProductDetailQuickBuy .counterChoice {
+	padding: 8px 0;
+}
 .windowProductDetailQuickBuy .productBtnBuy {
-	width: 50%;
 	margin: 0;
+	padding: 8px;
 }
 .windowProductDetailQuickBuy button.close {
 	position: absolute;
@@ -1579,7 +1582,9 @@ h2.name .link {
 	line-height: 1;
 	white-space: nowrap;
 }
-
+.shopingTable .productBtnBuy {
+	padding: 8px;
+}
 .shopingTable tbody.actionBtn tr td:first-child a {
 	float: left;
 }
@@ -1789,6 +1794,12 @@ h2.name .link {
 		text-align: center;
 		height: 56px;
 	}
+	.row.catalog .itemStateSet .left {
+	    padding-left: 3px;
+	}
+	.row.catalog .itemStateSet img {
+	    margin: 0 11px;
+	}
 	.nav .nav_group .phone .number {
 		font-size: 91%;
 	}
@@ -1861,6 +1872,9 @@ h2.name .link {
 	}
 	.filter {
 		display: none;
+	}
+	.productFeatures .counterChoice {
+	    font-size: 75%;
 	}
 }
 
