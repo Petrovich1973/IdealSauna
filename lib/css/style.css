@@ -182,6 +182,9 @@ textarea.form-control {
 	padding: 28px 0 0;
 	line-height: 1.24em;
 }
+.header .mobileCenter > .mobileLogo {
+	text-align: left;
+}
 .header .logo {
 	position: relative;
 	top: -24px;
@@ -209,9 +212,6 @@ textarea.form-control {
 }
 .header .nav > li.selected a span {
 	box-shadow: inset 0 -1px 0 0 #0096ff;
-}
-.header .phone {
-	padding-right: 15px;
 }
 .header .phone .number {
 	padding-top: 5px;
@@ -374,7 +374,7 @@ textarea.form-control {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 6px 10px;
+	padding: 6px 15px;
 	font-weight: 400;
 }
 .topBar .shopping_basket > li:before {
@@ -624,7 +624,7 @@ h1.categoryName {
 	display: none;
 }
 .nav .nav_group {
-	padding: 0 10px 20px;
+	padding: 0 15px 20px;
 }
 .nav_group_label {
 	text-transform: uppercase;
@@ -788,6 +788,7 @@ h2.name .link {
 .row.catalog .itemStateSet .right {
 	/*float: right;*/
 	padding-right: 3px;
+	padding-top: 1px;
 }
 .row.catalog .itemStateSet img {
 	display: inline-block;
@@ -1111,7 +1112,7 @@ h2.name .link {
 .productDetail {
 	display: flex;
 	width: 100%;
-	font-size: 90%;
+	font-size: 86%;
 }
 .productDetail > .col {
     width: 50%;
@@ -1615,7 +1616,7 @@ h2.name .link {
 	}
 	.footer_nav .nav {
 		flex-flow: row wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.bar {
 		display: none;
@@ -1685,6 +1686,9 @@ h2.name .link {
 	.simple-pagination .prev,
 	.simple-pagination .next {
 	    display: none;
+	}
+	.footer_nav .nav {
+		justify-content: space-around;
 	}
 }
 
