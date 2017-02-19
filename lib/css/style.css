@@ -168,6 +168,10 @@ textarea.form-control {
 	display: block;
 	font-size: 110%;
 	font-weight: 600;
+	color: #000;
+}
+.phone .number:hover {
+	color: #0096ff;
 }
 .phone .icon {
 	position: relative;
@@ -229,14 +233,22 @@ textarea.form-control {
 	font-weight: 600;
 	font-size: .87em;
 	line-height: 1;
-	cursor: pointer;
 	padding-top: 5px;
+}
+.header .user .avatar {
+    position: relative;
+    top: 5px;
 }
 .header .user small {
 	font-size: .77em;
 	opacity: .8;
 	line-height: 1;
-	cursor: pointer;
+}
+.header .user a {
+	color: #000;
+}
+.header .user a:hover {
+	color: #0096ff;
 }
 
 
@@ -713,7 +725,7 @@ h2.name .link {
 .row.catalog .thumbnail > img {
 	width: auto;
 }
-.row.catalog .thumbnail a > img {
+.row.catalog .thumbnail .btn > img {
 	display: inline-block;
 	vertical-align: middle;
 	width: auto;
@@ -734,6 +746,13 @@ h2.name .link {
 	margin-bottom: 12px;
 	height: 51px;
 	overflow: hidden;
+}
+.row.catalog h3 a {
+	display: block;
+	color: #000;
+}
+.row.catalog h3 a:hover {
+	color: #0096ff;
 }
 .row.catalog .thumbnail > img + .caption > h3 {
 	height: 35px;
@@ -759,7 +778,7 @@ h2.name .link {
     padding: 4px 12px;
 }
 .row.catalog .btn:hover {
-	background-color:#0087e5;
+	background-color:#0087e6;
 }
 .row.catalog .price {
 	float: left;
@@ -790,7 +809,7 @@ h2.name .link {
 	padding-right: 3px;
 	padding-top: 1px;
 }
-.row.catalog .itemStateSet img {
+.row.catalog .itemStateSet a {
 	display: inline-block;
 	margin: 0 3px;
 	width: auto;
@@ -886,6 +905,7 @@ h2.name .link {
 .owl-nav > *:hover,
 .owl-nav > *:focus {
 	color: #fff;
+	transform: scale(1.1);
 }
 .owl-nav .owl-prev {
 	left: -10px;
@@ -969,8 +989,8 @@ h2.name .link {
 .btn-primary:hover,
 .btn-primary:focus {
     color: #fff;
-    background-color: #0087e5;
-    border-color: #0087e5;
+    background-color: #0087e6;
+    border-color: #0087e6;
 }
 .btn-primary.active, 
 .btn-primary:active, 
@@ -1519,6 +1539,10 @@ h2.name .link {
 .shopingTable .productName {
 	display: block;
 	line-height: 1;
+	color: #000;
+}
+.shopingTable .productName:hover {
+	color: #0096ff;
 }
 .shopingTable .price {
 	display: block;

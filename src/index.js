@@ -20,13 +20,13 @@ var heightTopBar = function() {
 var formQuickBuy = '<form role="form" data-toggle="validator" id="windowProductDetailQuickBuy">'+
 		'<p><strong>Введите имя и телефон для того, чтобы<br>наш менеджер связался с вами.</strong></p>'+
 		'<div class="line flex">'+
-			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя" required><span class=" star colorff8338">&#9913;</span></div>'+
-			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона" required><span class=" star colorff8338">&#9913;</span></div>'+
+			'<div class="widthL"><input type="text" class="form-control" placeholder="Имя" required><span class=" star colorff8338">&#10034;</span></div>'+
+			'<div class="widthR"><input type="text" class="form-control" placeholder="Номер телефона" required><span class=" star colorff8338">&#10034;</span></div>'+
 		'</div>'+
 		'<div class="line">'+
 			'<textarea class="form-control" rows="3" placeholder="Комментарий"></textarea>'+
 		'</div>'+
-		'<div class="instruction"><span class="colorff8338">&#9913;</span> — поля, обязательные для заполнения</div>'+
+		'<div class="instruction"><span class="colorff8338">&#10034;</span> — поля, обязательные для заполнения</div>'+
 	'</form>'
 
 var formQuickBuyBtn = '<a href="#" class="btn btn-primary productBtnBuy" role="button">'+
@@ -92,6 +92,40 @@ $(document).ready(function() {
 		heightTopBar()
 
 		$('.phone img').addClass('vibro')
+
+		// $('body').on('click', '.itemStateSet a', function() {
+		// 	console.log(1)
+		// 	//$(this).children('img').attr('src')
+		// 	return false
+		// })
+
+		$('.itemStateSet a').hover(
+		function() {
+			var _self = $(this)
+			var src = _self.children('img').attr('src')
+			var reOff = new RegExp('-off\.png')
+			var reOn = new RegExp('-on\.png')
+			if(reOff.test(src)) {
+				var newSrc = src.replace('-off.png', '-on.png')
+				_self.children('img').attr('src', newSrc)
+			} else if(reOn.test(src)) {
+				var newSrc = src.replace('-on.png', '-off.png')
+				_self.children('img').attr('src', newSrc)
+			}
+		},
+		function() {
+			var _self = $(this)
+			var src = _self.children('img').attr('src')
+			var reOff = new RegExp('-off\.png')
+			var reOn = new RegExp('-on\.png')
+			if(reOff.test(src)) {
+				var newSrc = src.replace('-off.png', '-on.png')
+				_self.children('img').attr('src', newSrc)
+			} else if(reOn.test(src)) {
+				var newSrc = src.replace('-on.png', '-off.png')
+				_self.children('img').attr('src', newSrc)
+			}
+		})
 
 		$('.layout').animate({
 			opacity: 1
