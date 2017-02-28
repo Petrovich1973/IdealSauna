@@ -747,6 +747,9 @@ h2.name .link {
 	height: 51px;
 	overflow: hidden;
 }
+.categories h3 {
+    text-align: center;
+}
 .row.catalog h3 a {
 	display: block;
 	color: #000;
@@ -759,9 +762,6 @@ h2.name .link {
 	text-align: center;
 	word-wrap: break-word;
 }
-.row.catalog .thumbnail:hover > img + .caption > h3 {
-	color: #0096ff;
-}    
 .row.catalog .manufacturerCountry {
 	font-size: 90%;
 	color: #989898;
@@ -860,6 +860,21 @@ h2.name .link {
 	display: block;
 	width: auto;
 	margin: 0 auto;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(../filter/filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+.brands.owl-carousel .owl-item a:hover img {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
 }
 
 .banner {
