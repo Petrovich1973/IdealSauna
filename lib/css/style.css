@@ -1539,6 +1539,7 @@ h2.name .link {
 
 
 .shopingTable {
+	min-width: 100%;
 	margin-bottom: 50px;
 }
 
@@ -1628,6 +1629,58 @@ h2.name .link {
 .shopingTable tbody.actionBtn tr td:first-child a {
 	float: left;
 }
+
+
+
+
+.wizardStepsNames span {
+	color: #9a9a9a;
+}
+.wizardStepsNames .current,
+.wizardStepsNames .complete {
+	color: inherit;
+}
+
+
+
+
+
+.orderTotal .productBtnBuy {
+    min-width: 206px;
+    box-sizing: border-box;
+}
+.orderTotal .productBtnBuy[disabled] {
+    background-color: #0087e6 !important;
+    border-color: #0087e6 !important;
+    opacity: .5 !important;
+}
+.orderTotal .shopingTable tbody tr td:last-child {
+	width: 1%;
+}
+
+
+
+
+.orderTabsNav {
+    margin: 30px -10px 20px;
+    padding: 0;
+    list-style: none;
+}
+.orderTabsNav li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 4px 10px;
+}
+.orderTabsNav li.active a {
+    color: #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+.orderTabsContent {
+	min-height: 250px;
+}
+
+
 
 
 

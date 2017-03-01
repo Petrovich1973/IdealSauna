@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>IdealSauna</title>
+
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=23">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=23">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=23">
+
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=23">
+
+    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=23">
+
+    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=23"/>
+
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=23">
+    <link rel="stylesheet" href="lib/css/style.css?v=23">
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=23">
+    
+    <!-- include html -->
+    <script src="lib/w3data/w3data.js?v=23"></script>
+
+</head>
+<body>
+
+	<!-- <h1 class="spinner">Загрузка...</h1> -->
+
+    <div class="developmentInfo temp" style="position: fixed;bottom: 0;right: 0; z-index: 10;"></div>
+
+    <div class="layout" id="top"> <!-- scroll to #top -->
+    
+        <div class="header" w3-include-html="components/header.html"></div>
+
+        <div class="topBar" w3-include-html="components/topBar.html"></div>
+
+        <div class="mainBox">
+
+            <div class="container">
+
+                <div class="row normalizeHeight">
+
+                    <div class="content">
+
+                        <h1 class="categoryName wizardStepsNames">
+                            <span class="complete">Корзина</span> <img src="lib/img/arrow-right.png" height="11" alt=""> 
+                            <span class="current">Оформление заказа</span> <img src="lib/img/arrow-right.png" height="11" alt=""> 
+                            <span class="">Доставка</span> <img src="lib/img/arrow-right.png" height="11" alt=""> 
+                            <span class="">Оплата</span>
+                        </h1>
+
+                        <div class="orderTabs">
+                            <ul class="orderTabsNav">
+                                <li><a data-toggle="tab" href="#login1">Оформить заказ без регистрации</a></li>
+                                <li><a data-toggle="tab" href="#login2">Регистрация</a></li>
+                                <li class="active"><a data-toggle="tab" href="#login3">вход</a></li>
+                            </ul>
+     
+                            <div class="tab-content orderTabsContent">
+                                <div id="login1" class="tab-pane fade">
+                                    <p>Содержимое Оформить заказ без регистрации</p>
+                                    <p>Главная изюминка этой печи для бани заключается в конструкции корпуса. Он сделан в виде решетки. Такой корпус дровяной печи вмещает в себя много камней, которые накапливают жар и позволяют поддавать большим количеством воды. Благодаря открытой конструкции пространства для камней воду можно плескать прямо на всю внешнюю поверхность печи и получать восхитительно мягкий пар. Большое количество камней, находящееся внутри стильного металлического каркаса, по мере нагревания создаёт прекрасную атмосферу в парилке после того, как угасает огонь. Благодаря современной решётчатой конструкции повышается эффективность сжигания дров. Данная конструкция дровяной печи позволяет также сокращать безопасные расстояния до горючих материалов в сравнении с обычными печами-каменками и более свободно планировать пространство парилки. </p>
+                                </div>
+                                <div id="login2" class="tab-pane fade">
+                                    <p>Содержимое Регистрация...</p>
+                                    <p>Главная изюминка этой печи для бани заключается в конструкции корпуса. Он сделан в виде решетки. Такой корпус дровяной печи вмещает в себя много камней, которые накапливают жар и позволяют поддавать большим количеством воды. Благодаря открытой конструкции пространства для камней воду можно плескать прямо на всю внешнюю поверхность печи и получать восхитительно мягкий пар. Большое количество камней, находящееся внутри стильного металлического каркаса, по мере нагревания создаёт прекрасную атмосферу в парилке после того, как угасает огонь. Благодаря современной решётчатой конструкции повышается эффективность сжигания дров. Данная конструкция дровяной печи позволяет также сокращать безопасные расстояния до горючих материалов в сравнении с обычными печами-каменками и более свободно планировать пространство парилки. </p>
+                                </div>
+                                <div id="login3" class="tab-pane fade in active">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" placeholder="Email" required />
+                                            <span class="star colorff8338">&#10034;</span>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" class="form-control" placeholder="Пароль" required />
+                                            <span class="star colorff8338">&#10034;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="orderTotal">
+                            <table class="shopingTable">
+                                <tbody class="total">
+                                    <tr>
+                                        <td colspan="4">
+                                            <div>
+                                                <span class="totalName">ИТОГО:</span>
+                                                <span class="totalDelivery">Без учёта доставки</span>
+                                            </div>
+                                        </td>
+                                        <td colspan="2" class="totalPrice">
+                                            <span>361 350</span> <span>р.</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody class="actionBtn">
+                                    <tr>
+                                        <td colspan="4">
+                                            <a href="#" class="btn btn-gray productBtnBuy" role="button">
+                                                <span>Вернуться к покупкам</span>
+                                            </a>
+                                        </td>
+                                        <td colspan="2" class="totalPrice">
+                                            <a href="#" class="btn btn-primary productBtnBuy" role="button" disabled>
+                                                <span>Далее</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2>С этим товаром покупают</h2>
+
+                        <div class="row catalog owl-carousel" w3-include-html="modules/owl-catalog.html"></div>
+
+                        <h2 class="callToAction align-center">
+                            <span>Остались вопросы? — Звоните:</span>
+                            <a href="tel:+74952150546" class="colorff8338"><nobr>+7 (495) 215-05-46</nobr></a>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer_nav" w3-include-html="components/footer_nav.html"></div>
+
+        <div class="footer_copyright" w3-include-html="components/footer_copyright.html"></div>
+
+    </div>
+
+    <script src="lib/jquery/jquery-3.1.1.min.js?v=23"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js?v=23"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=23"></script>
+
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=23"></script>
+    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=23"></script>
+
+    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=23"></script>
+    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=23"></script>
+
+    <script src="lib/simplePagination/jquery.simplePagination.js?v=23"></script>
+    
+    <script src="dist/bundle.js?v=23"></script>
+
+</body>
+</html>
