@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=25"/>
 
     <link rel="stylesheet" href="lib/fonts/fonts.css?v=25">
-	<link rel="stylesheet" href="lib/css/style.css?v=25">
-	<link rel="stylesheet" href="lib/css/font-awesome.min.css?v=25">
+    <link rel="stylesheet" href="lib/css/style.css?v=25">
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=25">
     
     <!-- include html -->
     <script src="lib/w3data/w3data.js?v=25"></script>
@@ -42,19 +42,17 @@
 
                 <div class="row normalizeHeight">
 
-                    <div class="bar" w3-include-html="components/bar.html"></div>
-
                     <div class="content">
 
-                        <ol class="breadcrumb" w3-include-html="modules/breadcrumb.html"></ol>
+                        <h1 class="categoryName wizardStepsNames" w3-include-html="modules/wizardStepsNames.html"></h1>
 
-                        <h1 class="categoryName">Электрические печи</h1>
-
-                        <div class="filter" w3-include-html="modules/filter.html"></div>
-
-                        <div class="row catalog" w3-include-html="modules/owl-catalog.html"></div>
+                        <div class="form formDelivery" w3-include-html="modules/formDelivery.html"></div>
                         
-                        <div class="align-center" w3-include-html="modules/pager.html"></div>
+                        <div class="orderTotal" w3-include-html="modules/orderTotal.html"></div>
+
+                        <h2>С этим товаром покупают</h2>
+
+                        <div class="row catalog owl-carousel" w3-include-html="modules/owl-catalog.html"></div>
 
                         <h2 class="callToAction align-center">
                             <span>Остались вопросы? — Звоните:</span>

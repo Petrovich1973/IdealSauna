@@ -6,22 +6,22 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>IdealSauna</title>
 
-    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=24">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=24">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=24">
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=25">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=25">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=25">
 
-    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=24">
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=25">
 
-    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=24">
+    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=25">
 
-    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=24"/>
+    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=25"/>
 
-    <link rel="stylesheet" href="lib/fonts/fonts.css?v=24">
-    <link rel="stylesheet" href="lib/css/style.css?v=24">
-    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=24">
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=25">
+    <link rel="stylesheet" href="lib/css/style.css?v=25">
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=25">
     
     <!-- include html -->
-    <script src="lib/w3data/w3data.js?v=24"></script>
+    <script src="lib/w3data/w3data.js?v=25"></script>
 
 </head>
 <body>
@@ -44,159 +44,11 @@
 
                     <div class="content">
 
-                        <h1 class="categoryName wizardStepsNames">
-                            <span class="complete">Корзина</span> <img src="lib/img/arrow-right.png" height="11" alt=""> 
-                            <span class="current">Оформление заказа</span> <img src="lib/img/arrow-right.png" height="11" alt=""> 
-                            <span class="">Доставка</span> <img src="lib/img/arrow-right.png" height="11" alt=""> 
-                            <span class="">Оплата</span>
-                        </h1>
+                        <h1 class="categoryName wizardStepsNames" w3-include-html="modules/wizardStepsNames.html"></h1>
 
-                        <div class="orderTabs">
-                            <ul class="orderTabsNav">
-                                <li class="active"><a data-toggle="tab" href="#login1">Оформить заказ без регистрации</a></li>
-                                <li><a data-toggle="tab" href="#login2">Регистрация</a></li>
-                                <li><a data-toggle="tab" href="#login3">вход</a></li>
-                            </ul>
-     
-                            <div class="tab-content orderTabsContent">
-                                <div id="login1" class="tab-pane fade in active">
-                                    <div class="form">
-                                        <h5 class="tab-name">Контактная информация</h5>
-                                        <div class="row">
-                                            <div class="col-md-4 field">
-                                                <input type="text" class="form-control" placeholder="Контактное лицо" required />
-                                                <span class="star colorff8338">&#10034;</span>
-                                            </div>
-                                            <div class="col-md-5 field">
-                                                <input type="text" class="form-control" placeholder="Адрес доставки" required />
-                                                <span class="star colorff8338">&#10034;</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="field-group">
-                                                    <input type="text" class="form-control" placeholder="Номер телефона" data-mask="+7(000)000-00-00" required />
-                                                    <span class="star colorff8338">&#10034;</span>
-                                                </div>
-                                                <div class="field-group">
-                                                    <input type="text" class="form-control" placeholder="Email" required />
-                                                    <span class="star colorff8338">&#10034;</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5 field">
-                                                <textarea class="form-control" placeholder="Комментарий к заказу" required ></textarea>
-                                                <span class="star colorff8338">&#10034;</span>
-                                            </div>
-                                        </div>
-                                        <div class="row rules">
-                                            <div class="col-md-4">
-                                                <span class="star colorff8338">&#10034;</span> — поля, обязательные для заполнения
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="login2" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="form col-md-4">
-                                            <div class="row">
-                                                <div class="field col-md-12">
-                                                    <input type="text" class="form-control" placeholder="Email" required />
-                                                    <span class="star colorff8338">&#10034;</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="field col-md-12">
-                                                    <input type="text" class="form-control" placeholder="Придумайте пароль" required />
-                                                    <span class="star colorff8338">&#10034;</span>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="field col-md-12">
-                                                    <input type="text" class="form-control" placeholder="Повторите пароль" required />
-                                                    <span class="star colorff8338">&#10034;</span>
-                                                </div>
-                                            </div>
-                                            <div class="row rules">
-                                                <div class="col-md-12">
-                                                    <span class="star colorff8338">&#10034;</span> — поля, обязательные для заполнения
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-9">
-                                                    <a href="#" class="btn btn-primary productBtnBuy" role="button">
-                                                        <span>Регистрация</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <p>На указанный вами email в течение 1 минуты будет выслано письмо с подтверждением регистрации. Перейдите по ссылке в письме и продолжите покупки.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="login3" class="tab-pane fade">
-                                    <div class="form">
-                                        <div class="row">
-                                            <div class="col-md-4 field">
-                                                <input type="text" class="form-control" placeholder="Email" required />
-                                                <span class="star colorff8338">&#10034;</span>
-                                            </div>
-                                            <div class="col-md-4 field">
-                                                <input type="text" class="form-control" placeholder="Пароль" required />
-                                                <span class="star colorff8338">&#10034;</span>
-                                            </div>
-                                        </div>
-                                        <div class="row rules">
-                                            <div class="col-md-4">
-                                                <span class="star colorff8338">&#10034;</span> — поля, обязательные для заполнения
-                                            </div>
-                                            <div class="col-md-4 text-right">
-                                                <a href="">Забыли пароль?</a>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <a href="#" class="btn btn-primary productBtnBuy" role="button">
-                                                    <span>Войти</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="formOrder" w3-include-html="modules/formOrder.html"></div>
                         
-                        <div class="orderTotal">
-                            <table class="shopingTable">
-                                <tbody class="total">
-                                    <tr>
-                                        <td colspan="4">
-                                            <div>
-                                                <span class="totalName">ИТОГО:</span>
-                                                <span class="totalDelivery">Без учёта доставки</span>
-                                            </div>
-                                        </td>
-                                        <td colspan="2" class="totalPrice">
-                                            <span>361 350</span> <span>р.</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody class="actionBtn">
-                                    <tr>
-                                        <td colspan="4">
-                                            <a href="#" class="btn btn-gray productBtnBuy" role="button">
-                                                <span>Вернуться к покупкам</span>
-                                            </a>
-                                        </td>
-                                        <td colspan="2" class="totalPrice">
-                                            <a href="#" class="btn btn-primary productBtnBuy" role="button" disabled>
-                                                <span>Далее</span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <div class="orderTotal" w3-include-html="modules/orderTotal.html"></div>
 
                         <h2>С этим товаром покупают</h2>
 
@@ -221,19 +73,20 @@
 
     </div>
 
-    <script src="lib/jquery/jquery-3.1.1.min.js?v=24"></script>
-    <script src="lib/bootstrap3/js/bootstrap.min.js?v=24"></script>
-    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=24"></script>
+    <script src="lib/jquery/jquery-3.1.1.min.js?v=25"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js?v=25"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=25"></script>
 
-    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=24"></script>
-    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=24"></script>
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=25"></script>
+    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=25"></script>
 
-    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=24"></script>
-    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=24"></script>
+    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=25"></script>
+    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=25"></script>
+    <script src="lib/mask/jquery.mask.js?v=25"></script>
 
-    <script src="lib/simplePagination/jquery.simplePagination.js?v=24"></script>
+    <script src="lib/simplePagination/jquery.simplePagination.js?v=25"></script>
     
-    <script src="dist/bundle.js?v=24"></script>
+    <script src="dist/bundle.js?v=25"></script>
 
 </body>
 </html>

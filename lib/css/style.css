@@ -34,6 +34,59 @@ hr {
 	padding: 20px;
 }
 
+
+
+
+
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label span {
+	position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+input[type="radio"] + label span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -8px  0 0 -8px;
+    border: 2px solid #bdbdbd;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+input[type="radio"] + label span {
+     /*background-color: #bdbdbd;*/
+     background-color: transparent;
+}
+
+input[type="radio"]:checked + label span {
+     background-color: #0096ff;
+}
+input[type="radio"]:checked + label span:after {
+     border: 2px solid #0096ff;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.2s linear;
+  -o-transition:background-color 0.2s linear;
+  -moz-transition:background-color 0.2s linear;
+  transition:background-color 0.2s linear;
+}
+
+
 .align-top {
 	vertical-align: top;
 }
@@ -191,7 +244,8 @@ textarea.form-control {
 }
 .header .logo {
 	position: relative;
-	top: -24px;
+	/*top: -24px;*/
+	top: -16px;
 }
 .header .nav {
 	display: flex;
@@ -1716,6 +1770,68 @@ h2.name .link {
 .form textarea {
 	min-height: 85px;
 }
+
+
+
+
+
+.formDelivery {
+    margin: 30px 0 20px;
+}
+
+.deliveryList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.deliveryList li {
+	margin: 30px 0;
+	display: flex;
+}
+.deliveryList li > * {
+	display: block;
+	font-weight: 400;
+}
+.deliveryList li > *:first-child {
+	width: 30px;
+}
+.deliveryList li p {
+	margin-bottom: 0;
+}
+
+
+
+
+
+.formPayment {
+    margin: 30px 0 20px;
+}
+
+.paymentList {
+	margin: 10px 0 20px;
+	padding: 0;
+	list-style: none;
+}
+.paymentList li {
+	margin: 0;
+	display: flex;
+}
+.paymentList li > * {
+	display: block;
+	font-weight: 400;
+}
+.paymentList li > *:first-child {
+	width: 30px;
+}
+.paymentList li p {
+	margin-bottom: 0;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 1200px) {

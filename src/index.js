@@ -145,6 +145,11 @@ $(document).ready(function() {
 		  })		  
 		}
 
+		$('[data-mask]').each(function() {
+			var val = $(this).attr('data-mask')
+			$(this).mask(val)
+		})
+
 		$('.selectpicker').each(function() {
 			$(this).selectpicker({
 				showTick: true,
