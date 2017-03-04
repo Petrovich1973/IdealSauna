@@ -328,7 +328,7 @@ textarea.form-control {
 	-webkit-box-shadow: 0 2px 6px 1px rgba(0,0,0,0.4);
 	-moz-box-shadow: 0 2px 6px 1px rgba(0,0,0,0.4);
 	box-shadow: 0 2px 6px 1px rgba(0,0,0,0.4);
-	z-index: 2;
+	z-index: 16;
 }
 .topBar .nav > li:hover > .level_2 {
 	display: block;
@@ -454,7 +454,7 @@ textarea.form-control {
     border-width: 0px 8px 8px;
     border-style: solid;
     border-color: #ccc transparent;
-    z-index: 3;
+    z-index: 17;
 }
 .topBar .nav > li.parent:hover:after {
     content: "";
@@ -467,7 +467,7 @@ textarea.form-control {
     border-width: 0 7px 7px;
     border-style: solid;
     border-color: #fff transparent;
-    z-index: 3;
+    z-index: 17;
 }
 
 
@@ -1417,7 +1417,7 @@ h2.name .link {
 
 .overlay {
 	position: fixed;
-	z-index: 2;
+	z-index: 20;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -1435,7 +1435,7 @@ h2.name .link {
 }
 .windowProductDetailQuickBuy .productDetailWrap {
 	position: relative;
-	z-index: 3;
+	z-index: 30;
 	background-color: #fff;
 }
 .windowProductDetailQuickBuy .productDetail {
@@ -1628,6 +1628,7 @@ h2.name .link {
 }
 .shopingTable tbody.actionBtn tr td:first-child a {
 	float: left;
+	min-width: 206px;
 }
 
 
@@ -1682,9 +1683,39 @@ h2.name .link {
 
 
 
-
-
-
+.form .row {
+	padding: 8px 0;
+}
+.form .row.rules {
+	padding: 0 0 18px;
+	font-size: 87%;
+	color: #9a9a9a;
+}
+.form .row.rules .star {
+	font-size: 88%;
+}
+.form .field {
+	position: relative;
+}
+.form .field-group {
+	position: relative;
+	margin: 0 -15px 16px;
+	padding: 0 15px;
+}
+.form .field .star,
+.form .field-group .star {
+	position: absolute;
+	top: 0;
+	right: 3px;
+	line-height: 5px;
+	font-size: 75%;
+}
+.form .tab-name {
+	text-transform: uppercase;
+}
+.form textarea {
+	min-height: 85px;
+}
 
 
 @media (max-width: 1200px) {

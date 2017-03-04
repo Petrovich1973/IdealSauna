@@ -1,5 +1,7 @@
 import WindowSize from './utils/WindowSize'
 
+import mask from 'jquery-mask-plugin'
+
 var num = 88;
 var margin;
 

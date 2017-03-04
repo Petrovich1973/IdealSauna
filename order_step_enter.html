@@ -6,22 +6,22 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>IdealSauna</title>
 
-    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=23">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=23">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=23">
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=24">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=24">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=24">
 
-    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=23">
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=24">
 
-    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=23">
+    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=24">
 
-    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=23"/>
+    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=24"/>
 
-    <link rel="stylesheet" href="lib/fonts/fonts.css?v=23">
-    <link rel="stylesheet" href="lib/css/style.css?v=23">
-    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=23">
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=24">
+    <link rel="stylesheet" href="lib/css/style.css?v=24">
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=24">
     
     <!-- include html -->
-    <script src="lib/w3data/w3data.js?v=23"></script>
+    <script src="lib/w3data/w3data.js?v=24"></script>
 
 </head>
 <body>
@@ -53,29 +53,113 @@
 
                         <div class="orderTabs">
                             <ul class="orderTabsNav">
-                                <li><a data-toggle="tab" href="#login1">Оформить заказ без регистрации</a></li>
+                                <li class="active"><a data-toggle="tab" href="#login1">Оформить заказ без регистрации</a></li>
                                 <li><a data-toggle="tab" href="#login2">Регистрация</a></li>
-                                <li class="active"><a data-toggle="tab" href="#login3">вход</a></li>
+                                <li><a data-toggle="tab" href="#login3">вход</a></li>
                             </ul>
      
                             <div class="tab-content orderTabsContent">
-                                <div id="login1" class="tab-pane fade">
-                                    <p>Содержимое Оформить заказ без регистрации</p>
-                                    <p>Главная изюминка этой печи для бани заключается в конструкции корпуса. Он сделан в виде решетки. Такой корпус дровяной печи вмещает в себя много камней, которые накапливают жар и позволяют поддавать большим количеством воды. Благодаря открытой конструкции пространства для камней воду можно плескать прямо на всю внешнюю поверхность печи и получать восхитительно мягкий пар. Большое количество камней, находящееся внутри стильного металлического каркаса, по мере нагревания создаёт прекрасную атмосферу в парилке после того, как угасает огонь. Благодаря современной решётчатой конструкции повышается эффективность сжигания дров. Данная конструкция дровяной печи позволяет также сокращать безопасные расстояния до горючих материалов в сравнении с обычными печами-каменками и более свободно планировать пространство парилки. </p>
+                                <div id="login1" class="tab-pane fade in active">
+                                    <div class="form">
+                                        <h5 class="tab-name">Контактная информация</h5>
+                                        <div class="row">
+                                            <div class="col-md-4 field">
+                                                <input type="text" class="form-control" placeholder="Контактное лицо" required />
+                                                <span class="star colorff8338">&#10034;</span>
+                                            </div>
+                                            <div class="col-md-5 field">
+                                                <input type="text" class="form-control" placeholder="Адрес доставки" required />
+                                                <span class="star colorff8338">&#10034;</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="field-group">
+                                                    <input type="text" class="form-control" placeholder="Номер телефона" data-mask="+7(000)000-00-00" required />
+                                                    <span class="star colorff8338">&#10034;</span>
+                                                </div>
+                                                <div class="field-group">
+                                                    <input type="text" class="form-control" placeholder="Email" required />
+                                                    <span class="star colorff8338">&#10034;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 field">
+                                                <textarea class="form-control" placeholder="Комментарий к заказу" required ></textarea>
+                                                <span class="star colorff8338">&#10034;</span>
+                                            </div>
+                                        </div>
+                                        <div class="row rules">
+                                            <div class="col-md-4">
+                                                <span class="star colorff8338">&#10034;</span> — поля, обязательные для заполнения
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="login2" class="tab-pane fade">
-                                    <p>Содержимое Регистрация...</p>
-                                    <p>Главная изюминка этой печи для бани заключается в конструкции корпуса. Он сделан в виде решетки. Такой корпус дровяной печи вмещает в себя много камней, которые накапливают жар и позволяют поддавать большим количеством воды. Благодаря открытой конструкции пространства для камней воду можно плескать прямо на всю внешнюю поверхность печи и получать восхитительно мягкий пар. Большое количество камней, находящееся внутри стильного металлического каркаса, по мере нагревания создаёт прекрасную атмосферу в парилке после того, как угасает огонь. Благодаря современной решётчатой конструкции повышается эффективность сжигания дров. Данная конструкция дровяной печи позволяет также сокращать безопасные расстояния до горючих материалов в сравнении с обычными печами-каменками и более свободно планировать пространство парилки. </p>
-                                </div>
-                                <div id="login3" class="tab-pane fade in active">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <input type="text" class="form-control" placeholder="Email" required />
-                                            <span class="star colorff8338">&#10034;</span>
+                                        <div class="form col-md-4">
+                                            <div class="row">
+                                                <div class="field col-md-12">
+                                                    <input type="text" class="form-control" placeholder="Email" required />
+                                                    <span class="star colorff8338">&#10034;</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="field col-md-12">
+                                                    <input type="text" class="form-control" placeholder="Придумайте пароль" required />
+                                                    <span class="star colorff8338">&#10034;</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="field col-md-12">
+                                                    <input type="text" class="form-control" placeholder="Повторите пароль" required />
+                                                    <span class="star colorff8338">&#10034;</span>
+                                                </div>
+                                            </div>
+                                            <div class="row rules">
+                                                <div class="col-md-12">
+                                                    <span class="star colorff8338">&#10034;</span> — поля, обязательные для заполнения
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <a href="#" class="btn btn-primary productBtnBuy" role="button">
+                                                        <span>Регистрация</span>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <input type="text" class="form-control" placeholder="Пароль" required />
-                                            <span class="star colorff8338">&#10034;</span>
+                                        <div class="col-md-5">
+                                            <p>На указанный вами email в течение 1 минуты будет выслано письмо с подтверждением регистрации. Перейдите по ссылке в письме и продолжите покупки.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="login3" class="tab-pane fade">
+                                    <div class="form">
+                                        <div class="row">
+                                            <div class="col-md-4 field">
+                                                <input type="text" class="form-control" placeholder="Email" required />
+                                                <span class="star colorff8338">&#10034;</span>
+                                            </div>
+                                            <div class="col-md-4 field">
+                                                <input type="text" class="form-control" placeholder="Пароль" required />
+                                                <span class="star colorff8338">&#10034;</span>
+                                            </div>
+                                        </div>
+                                        <div class="row rules">
+                                            <div class="col-md-4">
+                                                <span class="star colorff8338">&#10034;</span> — поля, обязательные для заполнения
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <a href="">Забыли пароль?</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="#" class="btn btn-primary productBtnBuy" role="button">
+                                                    <span>Войти</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -137,19 +221,19 @@
 
     </div>
 
-    <script src="lib/jquery/jquery-3.1.1.min.js?v=23"></script>
-    <script src="lib/bootstrap3/js/bootstrap.min.js?v=23"></script>
-    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=23"></script>
+    <script src="lib/jquery/jquery-3.1.1.min.js?v=24"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js?v=24"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=24"></script>
 
-    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=23"></script>
-    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=23"></script>
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=24"></script>
+    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=24"></script>
 
-    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=23"></script>
-    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=23"></script>
+    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=24"></script>
+    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=24"></script>
 
-    <script src="lib/simplePagination/jquery.simplePagination.js?v=23"></script>
+    <script src="lib/simplePagination/jquery.simplePagination.js?v=24"></script>
     
-    <script src="dist/bundle.js?v=23"></script>
+    <script src="dist/bundle.js?v=24"></script>
 
 </body>
 </html>
