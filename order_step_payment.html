@@ -42,28 +42,17 @@
 
                 <div class="row normalizeHeight">
 
-                    <div class="bar" w3-include-html="components/bar.html"></div>
-
                     <div class="content">
 
-                        <ol class="breadcrumb" w3-include-html="modules/breadcrumb.html"></ol>
+                        <h1 class="categoryName wizardStepsNames" w3-include-html="modules/wizardStepsNames.html"></h1>
 
-                        <div class="windowProductDetailQuickBuy">
-                            <div class="overlay"></div>
-                            <div class="productDetailWrap"></div>
-                        </div>
-
-                        <div class="filter" w3-include-html="modules/filter.html"></div>
-
-                        <div class="productDetail" w3-include-html="modules/productDetail.html"></div>
+                        <div class="form formPayment" w3-include-html="modules/formPayment.html"></div>
                         
-                        <div class="productDescription" w3-include-html="modules/productDescription.html"></div>
+                        <div class="orderTotal" w3-include-html="modules/orderTotal.html"></div>
 
                         <h2>С этим товаром покупают</h2>
 
                         <div class="row catalog owl-carousel" w3-include-html="modules/owl-catalog.html"></div>
-                        
-                        <div class="navigation align-center"  w3-include-html="modules/navigation.html"></div>
 
                         <h2 class="callToAction align-center">
                             <span>Остались вопросы? — Звоните:</span>
@@ -98,24 +87,6 @@
     <script src="lib/simplePagination/jquery.simplePagination.js?v=26"></script>
     
     <script src="dist/bundle.js?v=26"></script>
-    
-    <script>
-        $(window).on('load', function() {
-            $('.productDetail').css({
-                opacity: 0
-            });
-            setTimeout(function() { 
-                $('.productLinkQuickBuy')
-                .trigger('click')
-                $('.productDetail').each(function() {
-                    $(this).animate({
-                        opacity: 1
-                    }, 400)
-                })
-            }, 1400);
-            console.log('window.load')
-        })        
-    </script>    
 
 </body>
 </html>

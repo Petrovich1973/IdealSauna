@@ -46,7 +46,7 @@ input[type="radio"] + label span {
     display: inline-block;
     width: 8px;
     height: 8px;
-    margin: -1px 4px 0 0;
+    margin: -1px 4px 0 4px;
     vertical-align: middle;
     cursor: pointer;
     -moz-border-radius: 50%;
@@ -1827,6 +1827,38 @@ h2.name .link {
 	margin-bottom: 0;
 }
 
+
+
+
+
+
+
+
+.contentStatic {
+	margin: 40px 0;
+}
+.contentStatic ul {
+	margin: 0 0 30px 0;
+	padding: 0;
+	list-style: none;
+}
+.contentStatic ul > li {
+	margin: 0 0 0 20px;
+	position: relative;
+}
+.contentStatic ul > li:before {
+	position: absolute;
+	content: "";
+	left: -20px;
+	top: .5em;
+    width: 8px;
+    height: 8px;
+    background-color: #0096ff;
+    border-radius: 50%;
+}
+.contentStatic strong {
+	font-weight: 600;
+}
 
 
 

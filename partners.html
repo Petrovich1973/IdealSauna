@@ -42,28 +42,33 @@
 
                 <div class="row normalizeHeight">
 
-                    <div class="bar" w3-include-html="components/bar.html"></div>
-
                     <div class="content">
 
                         <ol class="breadcrumb" w3-include-html="modules/breadcrumb.html"></ol>
 
-                        <div class="windowProductDetailQuickBuy">
-                            <div class="overlay"></div>
-                            <div class="productDetailWrap"></div>
+                        <h1 class="categoryName">Партнеры</h1>
+
+                        <div class="contentStatic">
+
+                            <h4>Как стать поставщиком?</h4>
+
+                            <p><strong>IdealSauna</strong> — интернет-магазин по продаже оборудования и комплектации турецких бань (хамамов), финских и инфракрасных саун, традиционных русских бань, SPA зон и помещений, а так мы оказываем услуги по строительству всех видов бань и саун.</p>
+
+                            <p>Высылайте коммерческие предложения на адрес <a href="mailto:info@idealsauna.ru">info@idealsauna.ru</a>. В теме письма указывайте товар, который предлагаете. Например, «Печи», «Товары для бань и саун» и тд....Письма с пометкой «Директору», «Сотрудничество» и тому подобные будут, к сожалению, проигнорированы. На этом этапе общение происходит исключительно по электронной почте. Мы свяжемся с вами, если Ваши товары и цены нас заинтересуют.<br><br></p>
+
+                            <h4>В коммерческом предложении указать:</h4>
+                            <ul>
+                                <li>Прайс с оптовыми ценами на товар (обязательный пункт, можно прикрепить файл Excel)</li>
+                                <li>Конкурентное преимущество вашей компании и товара</li>
+                                <li>Фото товаров с описаниями и характеристиками</li>
+                                <li>Где еще выставляется товар?</li>
+                                <li>Готовы ли вы предоставить рекламную продукцию?</li>
+                                <li>Условия оплаты и доставки</li>
+                            </ul>
+
+                            <p>Прайс должен включать, желательно, как розничные, так и оптовые цены со скидками — так вы ускорите процесс принятия решения. Условия скидок от определенной суммы нас могут оттолкнуть, рассматриваем сразу скидку на постоянных условиях работы.</p>
+                            
                         </div>
-
-                        <div class="filter" w3-include-html="modules/filter.html"></div>
-
-                        <div class="productDetail" w3-include-html="modules/productDetail.html"></div>
-                        
-                        <div class="productDescription" w3-include-html="modules/productDescription.html"></div>
-
-                        <h2>С этим товаром покупают</h2>
-
-                        <div class="row catalog owl-carousel" w3-include-html="modules/owl-catalog.html"></div>
-                        
-                        <div class="navigation align-center"  w3-include-html="modules/navigation.html"></div>
 
                         <h2 class="callToAction align-center">
                             <span>Остались вопросы? — Звоните:</span>
@@ -98,24 +103,6 @@
     <script src="lib/simplePagination/jquery.simplePagination.js?v=26"></script>
     
     <script src="dist/bundle.js?v=26"></script>
-    
-    <script>
-        $(window).on('load', function() {
-            $('.productDetail').css({
-                opacity: 0
-            });
-            setTimeout(function() { 
-                $('.productLinkQuickBuy')
-                .trigger('click')
-                $('.productDetail').each(function() {
-                    $(this).animate({
-                        opacity: 1
-                    }, 400)
-                })
-            }, 1400);
-            console.log('window.load')
-        })        
-    </script>    
 
 </body>
 </html>

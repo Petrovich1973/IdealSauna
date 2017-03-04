@@ -6,22 +6,22 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>IdealSauna</title>
 
-    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=25">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=25">
-    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=25">
+    <link rel="stylesheet" href="lib/bootstrap3/css/bootstrap.min.css?v=26">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.carousel.css?v=26">
+    <link rel="stylesheet" href="lib/owlCarousel2/css/owl.theme.default.min.css?v=26">
 
-    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=25">
+    <link rel="stylesheet" href="lib/bootstrap-select/css/bootstrap-select.min.css?v=26">
 
-    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=25">
+    <link rel="stylesheet" href="lib/fancyBox/source/jquery.fancybox.css?v=26">
 
-    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=25"/>
+    <link rel="stylesheet" href="lib/simplePagination/simplePagination.css?v=26"/>
 
-    <link rel="stylesheet" href="lib/fonts/fonts.css?v=25">
-    <link rel="stylesheet" href="lib/css/style.css?v=25">
-    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=25">
+    <link rel="stylesheet" href="lib/fonts/fonts.css?v=26">
+    <link rel="stylesheet" href="lib/css/style.css?v=26">
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css?v=26">
     
     <!-- include html -->
-    <script src="lib/w3data/w3data.js?v=25"></script>
+    <script src="lib/w3data/w3data.js?v=26"></script>
 
 </head>
 <body>
@@ -44,15 +44,51 @@
 
                     <div class="content">
 
-                        <h1 class="categoryName wizardStepsNames" w3-include-html="modules/wizardStepsNames.html"></h1>
+                        <ol class="breadcrumb" w3-include-html="modules/breadcrumb.html"></ol>
 
-                        <div class="form formPayment" w3-include-html="modules/formPayment.html"></div>
-                        
-                        <div class="orderTotal" w3-include-html="modules/orderTotal.html"></div>
+                        <h1 class="categoryName">Доставка и оплата</h1>
 
-                        <h2>С этим товаром покупают</h2>
+                        <div class="contentStatic">
 
-                        <div class="row catalog owl-carousel" w3-include-html="modules/owl-catalog.html"></div>
+                            <h4>Условия доставки по Москве и Московской области</h4>
+                            <ul>
+                                <li>После оформления заказа, менеджер нашего интернет-магазина свяжется с Вами для уточнения наличия товара, даты и времени доставки заказа.</li>
+                                <li>Доставка осуществляется в течении 3-х рабочих дней после подтверждения заказа.</li>
+                                <li>Доставка осуществляется до подъезда, дома или КПП покупателя.</li>
+                                <li>Если масса товара превышает 20 кг, разгрузка производится силами Покупателя.</li>
+                            </ul>
+
+                            <h4>Стоимость доставки по Москве и Московской области</h4>
+                            <ul>
+                                <li>Доставка по Москве в пределах МКАД <strong><nobr>мелкогабаритного товара</nobr></strong> (до 50*50*90 см), вес которого не превышает <nobr>15 кг</nobr> — <strong><nobr>500 рублей</nobr></strong>.</li>
+                                <li>Доставка по Москве в пределах МКАД <strong><nobr>крупногабаритных товаров</nobr></strong>, а так же товаров, вес которых превышает <nobr>15 кг</nobr> — <strong><nobr>700 рублей</nobr></strong>.</li>
+                                <li>Доставка за пределы МКАД — <strong><nobr>700 рублей</nobr></strong> + <nobr>40 рублей</nobr> за <nobr>1 км</nobr> (расчет километража производится с помощью Яндекс Карты).</li>
+                                <li><strong>Если общая сумма заказа более или равна <nobr>50 000 рублей</nobr></strong>, доставка по Москве в пределах МКАД — <strong>бесплатно</strong>.</li>
+                                <li><strong>Если общая сумма заказа более или равна <nobr>100 000 рублей</nobr></strong>, доставка по Московской области — <strong>бесплатно</strong>.</li>
+                            </ul>
+
+                            <h4>Доставка в другие регионы России</h4>
+                            <ul>
+                                <li>Доставка до транспортной компании мелкогабаритного товара — <nobr>500 рублей</nobr>, крупногабаритного товара — <nobr>700 рублей</nobr>.</li>
+                                <li><strong>Если общая сумма заказа более или равна <nobr>50 000</nobr> рублей</strong>, доставка до транспортной компании — <strong>бесплатно</strong>.</li>
+                            </ul>
+
+                            <p>Мы работаем с любыми удобными для Вас транспортными компаниями.<br>
+                            После поступления денежных средств на наш счёт, в течении 1-3 рабочих дней, производится отправка товара. <br>
+                            По прибытии товара в Ваш город, с Вами свяжется оператор транспортной компании.<br>
+                            *Стоимость доставки можно рассчитать через онлайн-калькулятор на сайте транспортных компаний.<br><br></p>
+
+                            <h4>Оплата заказа</h4>
+                            <ul>
+                                <li>Наличными при получении товара (только Москва и МО)</li>
+                                <li>Оплата банковской картой при получении (только Москва и МО)</li>
+                                <li>Безналичный расчет — оплата банковским переводом на расчетный счет организации по предварительно выставленному счету. Также Вы можете получить <strong>счёт онлайн на сайте</strong> (после того как вы сформировали заказ на сайте, выбирайте способ оплаты <strong>безналичный расчет</strong>, в результате вы сможете скачать счёт с нашего сайта).</li>
+                                <li>Онлайн оплата — оплата с помощью <strong>Яндекс.Деньги, QIWI, WebMoney, Банковской карты (Visa, MasterCard, Maestro)</strong>. Оплата производится онлайн, на сайте. Сумма всех платежей в течении суток, не должна превышать 80 000 руб! Количество платежей в течении суток, не должно превышать 3-х.</li>
+                            </ul>
+
+                            <p>*Перед оплатой онлайн обязательно уточняйте наличие товара у наших менеджеров!</p>
+                            
+                        </div>
 
                         <h2 class="callToAction align-center">
                             <span>Остались вопросы? — Звоните:</span>
@@ -73,20 +109,20 @@
 
     </div>
 
-    <script src="lib/jquery/jquery-3.1.1.min.js?v=25"></script>
-    <script src="lib/bootstrap3/js/bootstrap.min.js?v=25"></script>
-    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=25"></script>
+    <script src="lib/jquery/jquery-3.1.1.min.js?v=26"></script>
+    <script src="lib/bootstrap3/js/bootstrap.min.js?v=26"></script>
+    <script src="lib/owlCarousel2/js/owl.carousel.min.js?v=26"></script>
 
-    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=25"></script>
-    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=25"></script>
+    <script src="lib/bootstrap-select/js/bootstrap-select.min.js?v=26"></script>
+    <script src="lib/bootstrap-select/js/i18n/defaults-ru_RU.js?v=26"></script>
 
-    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=25"></script>
-    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=25"></script>
-    <script src="lib/mask/jquery.mask.js?v=25"></script>
+    <script src="lib/elevatezoom/jquery.elevatezoom.min.js?v=26"></script>
+    <script src="lib/fancyBox/source/jquery.fancybox.pack.js?v=26"></script>
+    <script src="lib/mask/jquery.mask.js?v=26"></script>
 
-    <script src="lib/simplePagination/jquery.simplePagination.js?v=25"></script>
+    <script src="lib/simplePagination/jquery.simplePagination.js?v=26"></script>
     
-    <script src="dist/bundle.js?v=25"></script>
+    <script src="dist/bundle.js?v=26"></script>
 
 </body>
 </html>
