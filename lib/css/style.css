@@ -314,6 +314,14 @@ textarea.form-control {
 .topBar a {
 	color: #fff;
 }
+.topBar .logoSearch {
+	padding: 0 0 0 10px;
+	background: #fff;
+	display: none;
+}
+.topBar.navbar-fixed-top .logoSearch {
+	display: table-cell;
+}
 .topBar .form-control {
 	border-color: transparent;
 	-webkit-box-shadow: none;
@@ -376,7 +384,8 @@ textarea.form-control {
     line-height: 17px;
     text-align: center;
     font-style: normal;
-    font-family: Arial;
+    font-family: sans-serif;
+    overflow: hidden;
 }
 .nav>li>a:focus {
 	background-color: transparent;
