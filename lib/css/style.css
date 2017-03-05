@@ -376,6 +376,7 @@ textarea.form-control {
     line-height: 17px;
     text-align: center;
     font-style: normal;
+    font-family: Arial;
 }
 .nav>li>a:focus {
 	background-color: transparent;
