@@ -363,6 +363,23 @@ textarea.form-control {
 .topBar .nav > li > a span {
 	transform: scale(.9)
 }
+.topBar .nav > li > a em {
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    width: 18px;
+    height: 18px;
+    background: #ff8338;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+    font-style: normal;
+}
+.nav>li>a:focus {
+	background-color: transparent;
+}
 .topBar .nav > li:hover > a,
 .topBar .nav > li.selected > a {
 	background-color: rgba(0,0,0,0.1);
