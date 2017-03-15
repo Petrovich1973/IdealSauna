@@ -1911,6 +1911,43 @@ h2.name .link {
 
 
 
+
+ul.contactsParams {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.contactsParams > li {
+	margin: 0 0 15px;
+	display: flex;
+}
+ul.contactsParams li:before {
+	display: none;
+}
+ul.contactsParams > li > div:first-child {
+	width: 40px;
+	min-width: 40px;
+}
+ul.contactsParams > li > div:first-child img {
+	position: relative;
+	top: -4px;
+}
+ul.contactsParams > li p {
+	margin: 0;
+}
+
+
+
+
+
+.yandexMapIdealSauna {
+	display: block;
+	width: 100%;
+}
+
+
+
+
 /*fornetcat*/
 .nc-navbar.nc--fixed {
 	display: none;
