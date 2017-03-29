@@ -1,15 +1,24 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Arsenal');*/
+
+/*@import url('https://fonts.googleapis.com/css?family=PT+Sans');*/
+
+
 body {
-	font-family: 'Exo 2 Condensed';
+	font-family: 'Exo 2 Condensed' /*'Roboto' 'Arsenal' 'PT Sans', */;
 	font-size: 16px;
+	line-height: 1.6em;
 }
 
 ::selection {
 	color: #004b8c;
-	background: rgba(0,150,255,0.4); /* WebKit/Blink Browsers */
+	background: rgba(0,150,255,0.4);
 }
 ::-moz-selection {
 	color: #004b8c;
-	background: rgba(0,150,255,0.4); /* Gecko Browsers */
+	background: rgba(0,150,255,0.4);
 }
 
 body a {
@@ -841,6 +850,7 @@ h2.name .link {
 .row.catalog h3 a {
 	display: block;
 	color: #000;
+    font-weight: 300;
 }
 .row.catalog h3 a:hover {
 	color: #0096ff;
@@ -1742,6 +1752,7 @@ h2.name .link {
 .wizardStepsNames .current,
 .wizardStepsNames .complete {
 	color: inherit;
+    white-space: nowrap;
 }
 
 
@@ -1842,6 +1853,7 @@ h2.name .link {
 }
 .deliveryList li > *:first-child {
 	width: 30px;
+	min-width: 30px;
 }
 .deliveryList li p {
 	margin-bottom: 0;
@@ -1870,6 +1882,7 @@ h2.name .link {
 }
 .paymentList li > *:first-child {
 	width: 30px;
+	min-width: 30px;
 }
 .paymentList li p {
 	margin-bottom: 0;
@@ -2000,6 +2013,9 @@ body {
 	}
 	.row.catalog > .item {
 	    width: 25%;
+	}
+	.form .row .field.exception {
+		margin-bottom: 16px;
 	}
 }
 
