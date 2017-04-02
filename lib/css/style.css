@@ -375,9 +375,9 @@ textarea.form-control {
 /*.topBar .nav > li:first-child > a {
 	padding-left: 0;
 }*/
-.topBar .nav > li > a span {
+/*.topBar .nav > li > a span {
 	transform: scale(.9)
-}
+}*/
 .topBar .nav > li > a em {
     position: absolute;
     top: 5px;
@@ -797,6 +797,8 @@ h2.name .link {
 }
 .row.catalog .item {
 	padding-top: 10px;
+    max-width: 270px;
+    margin: 0 auto;
 }
 .row.catalog > .item {
     width: 25%;
@@ -1943,7 +1945,7 @@ ul.contactsParams > li > div:first-child {
 }
 ul.contactsParams > li > div:first-child img {
 	position: relative;
-	top: -4px;
+	top: -1px;
 }
 ul.contactsParams > li p {
 	margin: 0;
