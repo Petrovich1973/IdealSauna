@@ -625,6 +625,9 @@ textarea.form-control {
 .content {
 	width: 75%;
 }
+.content.full {
+	width: 100%;
+}
 .bar {
 	width: 25%;
 }
@@ -795,51 +798,52 @@ h2.name .link {
 	padding-left: 5px;
 	padding-right: 5px;
 }
-.row.catalog .item {
+.catalog .item {
 	padding-top: 10px;
     max-width: 270px;
+    min-width: 194px;
     margin: 0 auto;
 }
-.row.catalog > .item {
+.catalog > .item {
     width: 25%;
     float: left;
     padding: 10px 4px 0;
 }
-.row.catalog .thumbnail {
+.catalog .thumbnail {
 	position: relative;
 	/*box-shadow: 0 0 6px rgba(0,0,0,0.14);*/
 	border: 1px solid transparent;
 	padding-top: 13px;
 }
-.row.catalog .thumbnail {
+.catalog .thumbnail {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
 }
-.row.catalog .thumbnail:hover {
+.catalog .thumbnail:hover {
 	border: 1px solid #ddd;
 }
-.row.catalog .thumbnail .caption {
+.catalog .thumbnail .caption {
 }
-.row.catalog .thumbnail > img {
+.catalog .thumbnail > img {
 	width: auto;
 }
-.row.catalog .thumbnail .btn > img {
+.catalog .thumbnail .btn > img {
 	display: inline-block;
 	vertical-align: middle;
 	width: auto;
 	height: 24px;
 }
-.row.catalog .thumbnail a > span {
+.catalog .thumbnail a > span {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 24px;
 }
-.row.catalog .btn-primary {
+.catalog .btn-primary {
 	background-color: #0096ff;
 	border-color: #0096ff;
 }
-.row.catalog h3 {
+.catalog h3 {
 	font-size: 100%;
 	margin-top: 0;
 	margin-bottom: 12px;
@@ -849,71 +853,75 @@ h2.name .link {
 .categories h3 {
     text-align: center;
 }
-.row.catalog h3 a {
+.catalog h3 a {
 	display: block;
 	color: #000;
     font-weight: 300;
 }
-.row.catalog h3 a:hover {
+.catalog h3 a:hover {
 	color: #0096ff;
 }
-.row.catalog .thumbnail > img + .caption > h3 {
+.catalog .thumbnail > img + .caption > h3 {
 	height: 35px;
 	text-align: center;
 	word-wrap: break-word;
 }
-.row.catalog .manufacturerCountry {
+.catalog .manufacturerCountry {
 	font-size: 90%;
 	color: #989898;
 	display: none;
 }
-.row.catalog .line:after {
+.catalog .line:after {
 	display: block;
 	content: "";
 	clear: both;
 }
-.row.catalog .btn {
+.catalog .btn {
 	float: right;
 	white-space: nowrap;
     padding: 4px 12px;
 }
-.row.catalog .btn:hover {
+.catalog .btn:hover {
 	background-color:#0087e6;
 }
-.row.catalog .price {
+.catalog .price {
 	float: left;
 }
-.row.catalog .price .current {
+.catalog .price .current {
 	line-height: 1;
 	font-weight: 600;
 }
-.row.catalog .price .old {
+.catalog .price .old {
 	text-decoration: line-through;
 	color: #9a9a9a;
 	font-size: 90%;
 }
 
-.row.catalog .itemStateSet {
+.catalog .itemStateSet {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	line-height: 1;
 }
-.row.catalog .itemStateSet .left {
+.catalog .itemStateSet .left {
 	float: left;
 	padding-left: 11px;
 }
-.row.catalog .itemStateSet .right {
-	/*float: right;*/
+.catalog .itemStateSet .right {
+	float: right;
 	padding-right: 3px;
 	padding-top: 1px;
 }
-.row.catalog .itemStateSet a {
+.catalog .itemStateSet a {
 	display: inline-block;
 	margin: 0 3px;
 	width: auto;
 	float: left;
+    color: #000;
+}
+.catalog .itemStateSet a:hover {
+    color: #ff8338;
 }
 
 
@@ -1960,6 +1968,54 @@ ul.contactsParams > li p {
 	width: 100%;
 }
 
+
+
+.comparison .comparisonFilter {
+	padding: 0;
+	margin: 0 -8px;
+	list-style: none;
+}
+.comparison .comparisonFilter > li {
+	margin: 0;
+	padding: 4px 8px;
+	cursor: pointer;
+}
+.comparison .comparisonFilter > li:hover,
+.comparison .comparisonFilter > li.active {
+	background-color: rgba(0, 0, 0, .1);
+}
+.comparison .comparisonFilter > li:before {
+	display: none;
+}
+.comparison .table>thead>tr>th {
+	vertical-align: top;
+	font-weight: normal;
+}
+.comparison .table>thead>tr>th:first-child {
+	width: 20%;
+}
+.comparison .table>tbody+tbody {
+	border-top: none;
+}
+.comparison .table>tbody:hover {
+	background-color: rgba(0, 0, 0, .05);
+}
+.comparison .catalog .item {
+	min-width: 172px;
+	max-width: 182px;
+}
+.comparison .thumbnail {
+	padding: 0;
+}
+.comparison .thumbnail .caption {
+	padding: 9px 0;
+}
+.comparison .catalog .itemStateSet .left {
+	padding-left: 0;
+}
+.comparison .catalog .thumbnail:hover {
+	border-color: transparent;
+}
 
 
 
