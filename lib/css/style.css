@@ -25,7 +25,7 @@ body a {
 	color: #007fd8;
 }
 a:focus, a:hover {
-	color: #0096ff;
+	color: #1a86d2;
 	text-decoration: none;
 }
 hr {
@@ -231,7 +231,7 @@ textarea.form-control {
 	color: #000;
 }
 .phone .number:hover {
-	color: #0096ff;
+	color: #1a86d2;
 }
 .phone .icon {
 	position: relative;
@@ -273,10 +273,10 @@ textarea.form-control {
 }
 .header .nav > li:hover a,
 .header .nav > li.selected a {
-	color: #0096ff;
+	color: #1a86d2;
 }
 .header .nav > li.selected a span {
-	box-shadow: inset 0 -1px 0 0 #0096ff;
+	box-shadow: inset 0 -1px 0 0 #1a86d2;
 }
 .header .phone .number {
 	padding-top: 5px;
@@ -309,7 +309,7 @@ textarea.form-control {
 	color: #000;
 }
 .header .user a:hover {
-	color: #0096ff;
+	color: #1a86d2;
 }
 
 
@@ -651,10 +651,10 @@ textarea.form-control {
 	line-height: 1;
 }
 .bar .menu a:hover {
-	color: #0096ff;
+	color: #1a86d2;
 }
 .bar .menu li.active > a {
-	color: #0096ff;
+	color: #1a86d2;
 	background-color: rgba(0,0,0,0.05);
 	margin-left: -5px;
 	padding-left: 5px;
@@ -760,7 +760,7 @@ h1.categoryName {
 }
 .nav_group_list a:focus, 
 .nav_group_list a:hover {
-	color: #0096ff;
+	color: #1a86d2;
 }
 
 .social-links {
@@ -823,7 +823,8 @@ h2.name .link {
 .catalog .thumbnail:hover {
 	border: 1px solid #ddd;
 }
-.catalog .thumbnail .caption {
+.catalog .thumbnail .caption .line {
+	min-height: 36px;
 }
 .catalog .thumbnail > img {
 	width: auto;
@@ -859,7 +860,7 @@ h2.name .link {
     font-weight: 300;
 }
 .catalog h3 a:hover {
-	color: #0096ff;
+	color: #1a86d2;
 }
 .catalog .thumbnail > img + .caption > h3 {
 	height: 35px;
@@ -2069,8 +2070,13 @@ body {
 	.shortMrnu {
 		display: none;
 	}
+	.row.catalog {
+	    text-align: center;
+	}
 	.row.catalog > .item {
 	    width: 25%;
+	    display: inline-block;
+	    float: none;
 	}
 	.form .row .field.exception {
 		margin-bottom: 16px;

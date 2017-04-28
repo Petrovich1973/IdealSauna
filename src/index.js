@@ -300,7 +300,9 @@ $(document).ready(function() {
 
 
 	$('body').on('click', '.topBar .nav li > a', function () {
-		if( $(this).next().hasClass('sub') ) return false
+		if('ontouchstart' in document.documentElement) {
+			if( $(this).next().hasClass('sub') ) return false
+		}	
     })
 
 	$('body').on('click', 'a.smooth-scroll', function(e) {
