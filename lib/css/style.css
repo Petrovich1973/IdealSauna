@@ -840,6 +840,9 @@ h2.name .link {
 	vertical-align: middle;
 	line-height: 24px;
 }
+.catalog .thumbnail a.productPic img {
+    height: 197px;
+}
 .catalog .btn-primary {
 	background-color: #0096ff;
 	border-color: #0096ff;
